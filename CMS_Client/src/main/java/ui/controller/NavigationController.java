@@ -3,11 +3,9 @@ package ui.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-
 import java.io.IOException;
 
 public class NavigationController extends SceneController {
-
 
     @FXML
     public void switchToUser(ActionEvent actionEvent) throws IOException{
