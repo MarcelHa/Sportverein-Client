@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="588.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.NavigationController">
+   <children>
+      <Pane prefHeight="178.0" prefWidth="972.0" style="-fx-background-color: #44bba4;">
+         <children>
+            <JFXTextField focusColor="WHITE" layoutX="738.0" layoutY="48.0" prefHeight="25.0" prefWidth="220.0" promptText="Search" unFocusColor="WHITE" />
+            <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="27.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/home.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="84.0" layoutY="51.0" text="Club Management System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="91.0" text="EVENTS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton layoutY="178.0" onAction="#switchToUser" prefHeight="44.0" prefWidth="186.0" text="MEMBERS" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutY="222.0" onAction="#switchToClub" prefHeight="44.0" prefWidth="186.0" text="CLUB" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutY="266.0" onAction="#switchToEvent" prefHeight="44.0" prefWidth="186.0" text="EVENTS" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutY="310.0" onAction="#switchToResult" prefHeight="44.0" prefWidth="186.0" text="RESULTS" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutY="354.0" prefHeight="44.0" prefWidth="186.0" text="SETTINGS" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="16.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="16.0" layoutY="225.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/club.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="16.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/competitions.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="14.0" layoutY="321.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/results.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="29.0" fitWidth="30.0" layoutX="13.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/settings.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
