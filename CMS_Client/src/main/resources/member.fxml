@@ -16,9 +16,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="588.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.NavigationController">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.controller.NavigationController">
    <children>
-      <Pane prefHeight="178.0" prefWidth="972.0" style="-fx-background-color: #44bba4;">
+      <Pane prefHeight="170.0" prefWidth="1000.0" style="-fx-background-color: #44bba4;">
          <children>
             <JFXTextField focusColor="WHITE" layoutX="738.0" layoutY="48.0" prefHeight="25.0" prefWidth="220.0" promptText="Search" unFocusColor="WHITE" />
             <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="27.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
@@ -38,57 +38,57 @@
             </Label>
          </children>
       </Pane>
-      <JFXButton layoutY="178.0" onAction="#switchToUser" prefHeight="40.0" prefWidth="165.0" text="MEMBERS" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="170.0" onAction="#switchToUser" prefHeight="40.0" prefWidth="130.0" text="MEMBERS" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutY="295.0" onAction="#switchToClub" prefHeight="40.0" prefWidth="165.0" text="CLUB" textAlignment="RIGHT" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="280.0" onAction="#switchToClub" prefHeight="40.0" prefWidth="130.0" text="CLUB" textAlignment="JUSTIFY" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutY="335.0" onAction="#switchToEvent" prefHeight="40.0" prefWidth="165.0" text="EVENTS" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="320.0" onAction="#switchToEvent" prefHeight="40.0" prefWidth="130.0" text="EVENTS" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutY="375.0" onAction="#switchToResult" prefHeight="40.0" prefWidth="165.0" text="RESULTS" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="360.0" onAction="#switchToResult" prefHeight="40.0" prefWidth="130.0" text="RESULTS" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutY="415.0" prefHeight="40.0" prefWidth="165.0" text="SETTINGS" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="400.0" prefHeight="40.0" prefWidth="130.0" text="SETTINGS" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="13.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/user.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="13.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/club.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="13.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="322.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/competitions.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="13.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/results.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="13.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="406.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@images/settings.png" />
          </image>
       </ImageView>
-      <Separator layoutX="145.0" layoutY="178.0" orientation="VERTICAL" prefHeight="410.0" prefWidth="40.0" />
+      <Separator layoutX="146.0" layoutY="170.0" orientation="VERTICAL" prefHeight="430.0" prefWidth="40.0" />
       <Label layoutX="190.0" layoutY="190.0" text="NEW MEMBER" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="15.0" />
@@ -145,12 +145,12 @@
         </columns>
       </TableView>
       <Button defaultButton="true" layoutX="751.0" layoutY="236.0" mnemonicParsing="false" text="GO" />
-      <JFXButton layoutY="218.0" onAction="#switchToUser" prefHeight="35.0" prefWidth="165.0" text="NEW MEMBER" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="245.0" onAction="#switchToUser" prefHeight="35.0" prefWidth="130.0" text="EDIT MEMBER" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutY="260.0" onAction="#switchToUser" prefHeight="35.0" prefWidth="165.0" text="EDIT MEMBER" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="210.0" onAction="#switchToUser" prefHeight="35.0" prefWidth="130.0" text="NEW MEMBER" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
