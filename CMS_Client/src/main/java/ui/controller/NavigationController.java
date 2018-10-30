@@ -8,7 +8,7 @@ import java.io.IOException;
 public class NavigationController extends SceneController {
 
     @FXML
-    public void switchToUser(ActionEvent actionEvent) throws IOException{
+    public void switchToMember(ActionEvent actionEvent) throws IOException{
         super.switchScene(actionEvent, "member.fxml");
     }
     @FXML
@@ -26,6 +26,14 @@ public class NavigationController extends SceneController {
     @FXML
     public void switchToResult(ActionEvent actionEvent) throws IOException{
         super.switchScene(actionEvent, "result.fxml");
+    }
+    @FXML
+    public void switchToNewMember(ActionEvent actionEvent) throws IOException{
+        super.switchScene(actionEvent, "newMember.fxml");
+    }
+    @FXML
+    public void switchToEditMember(ActionEvent actionEvent) throws IOException{
+        super.switchScene(actionEvent, "editMember.fxml");
     }
 
 }

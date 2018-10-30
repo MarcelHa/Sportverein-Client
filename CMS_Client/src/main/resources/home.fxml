@@ -33,7 +33,7 @@
             </Label>
          </children>
       </Pane>
-      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="210.0" onAction="#switchToUser" prefHeight="40.0" prefWidth="130.0" text="MEMBERS" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="210.0" onAction="#switchToMember" prefHeight="40.0" prefWidth="130.0" text="MEMBERS" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -84,7 +84,7 @@
          </image>
       </ImageView>
       <Separator layoutX="145.0" layoutY="170.0" orientation="VERTICAL" prefHeight="430.0" prefWidth="40.0" />
-      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="170.0" onAction="#switchToUser" prefHeight="40.0" prefWidth="130.0" text="HOME" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="170.0" onAction="#switchToHome" prefHeight="40.0" prefWidth="130.0" text="HOME" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

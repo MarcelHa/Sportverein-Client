@@ -33,7 +33,7 @@
             </Label>
          </children>
       </Pane>
-      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="210.0" onAction="#switchToUser" prefHeight="40.0" prefWidth="130.0" text="MEMBERS" textFill="#44bba4" underline="true">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="210.0" prefHeight="40.0" prefWidth="130.0" text="MEMBERS" textFill="#44bba4" underline="true">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -84,27 +84,27 @@
          </image>
       </ImageView>
       <Separator layoutX="145.0" layoutY="170.0" orientation="VERTICAL" prefHeight="430.0" prefWidth="40.0" />
-      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="285.0" onAction="#switchToUser" prefHeight="35.0" prefWidth="130.0" text="EDIT MEMBER" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="285.0" onAction="#switchToEditMember" prefHeight="35.0" prefWidth="130.0" text="EDIT MEMBER" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </JFXButton>
-      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="250.0" onAction="#switchToUser" prefHeight="35.0" prefWidth="130.0" text="NEW MEMBER" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="250.0" onAction="#switchToNewMember" prefHeight="35.0" prefWidth="130.0" text="NEW MEMBER" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="281.0" layoutY="297.0" ripplerFill="#44bba4" text="NEW MEMBER" underline="true">
+      <JFXButton layoutX="281.0" layoutY="297.0" onAction="#switchToNewMember" ripplerFill="#44bba4" text="NEW MEMBER" underline="true">
          <font>
             <Font size="18.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="672.0" layoutY="297.0" ripplerFill="#44bba4" text="EDIT MEMBER" underline="true">
+      <JFXButton layoutX="672.0" layoutY="297.0" onAction="#switchToEditMember" ripplerFill="#44bba4" text="EDIT MEMBER" underline="true">
          <font>
             <Font size="18.0" />
          </font>
       </JFXButton>
-      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="170.0" onAction="#switchToUser" prefHeight="40.0" prefWidth="130.0" text="HOME" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="170.0" onAction="#switchToHome" prefHeight="40.0" prefWidth="130.0" text="HOME" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
