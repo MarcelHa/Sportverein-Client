@@ -3,6 +3,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import rmi.RMIClient;
 
 public class MainClass extends Application {
 
@@ -17,5 +18,7 @@ public class MainClass extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.setResizable(false);
         primaryStage.show();
+
+        //RMIClient.getInstance().getStub().doIt();
     }
 }
