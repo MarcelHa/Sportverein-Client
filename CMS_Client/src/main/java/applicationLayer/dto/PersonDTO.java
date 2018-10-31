@@ -1,10 +1,8 @@
-package applicationLayer.domain;
+package applicationLayer.dto;
 
-import applicationLayer.interfaces.Iperson;
+import java.sql.Date;
 
-import java.util.Date;
-
-public class PersonDTO implements Iperson {
+public class PersonDTO {
 
         private String _firstName;
         private String _lastName;

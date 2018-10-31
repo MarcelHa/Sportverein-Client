@@ -1,8 +1,6 @@
 package presentationLayer.viewController;
 
-import applicationLayer.NewMemberHandler;
-import applicationLayer.domain.Person;
-import applicationLayer.interfaces.Iperson;
+import applicationLayer.dto.PersonDTO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -13,7 +11,7 @@ import presentationLayer.SceneController;
 import utilities.UtilDate;
 
 import java.io.IOException;
-import java.util.Date;
+import java.sql.Date;
 
 public class ViewControllerNewMember extends SceneController {
 
@@ -61,21 +59,21 @@ public class ViewControllerNewMember extends SceneController {
      */
     @FXML
     public void addNewMember(){
-        Iperson person = new Person();
+        PersonDTO person = new PersonDTO();
 
         person.setFirstName(firstName.getText());
         person.setLastName(lastName.getText());
         person.setDateOfBirth(toDate(birthday));
         person.setSocialSecurityNumber(ssn.getText());
 
-        NewMemberHandler newMemberHandler = new NewMemberHandler();
-        newMemberHandler.addNewMeber(person);
+
+        //MemmberHandler
+
     }
 
     //Date Converter
     private Date toDate(DatePicker datePicker){
-        UtilDate utilDate = new UtilDate();
-        return  utilDate.convertToDate(datePicker.getValue());
+        return UtilDate.convertToSQLDate(datePicker.getValue());
     }
 
 
