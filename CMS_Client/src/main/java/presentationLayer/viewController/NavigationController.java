@@ -1,13 +1,13 @@
-package ui.viewController;
-
+package presentationLayer.viewController;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
+import presentationLayer.SceneController;
 
 import java.io.IOException;
 
 public class NavigationController extends SceneController {
+
 
     @FXML
     public void switchToMember(ActionEvent actionEvent) throws IOException{
