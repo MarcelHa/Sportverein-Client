@@ -1,5 +1,6 @@
 package presentationLayer.viewController;
 
+import applicationLayer.MemberHandler;
 import applicationLayer.dto.PersonDTO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -9,7 +10,6 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import presentationLayer.SceneController;
 import utilities.UtilDate;
-
 import java.io.IOException;
 import java.sql.Date;
 
@@ -66,9 +66,8 @@ public class ViewControllerNewMember extends SceneController {
         person.setDateOfBirth(toDate(birthday));
         person.setSocialSecurityNumber(ssn.getText());
 
-
-        //MemmberHandler
-
+        MemberHandler memberHandler = new MemberHandler();
+        memberHandler.add(person);
     }
 
     //Date Converter

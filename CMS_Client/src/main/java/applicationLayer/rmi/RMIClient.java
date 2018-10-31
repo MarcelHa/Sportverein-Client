@@ -1,6 +1,7 @@
 package applicationLayer.rmi;
 
-import applicationLayer.interfaces.Remotable;
+import applicationLayer.interfaces.EventRemotable;
+import applicationLayer.interfaces.MemberRemotable;
 
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
@@ -9,20 +10,26 @@ import java.rmi.registry.Registry;
 public class RMIClient {
 
     private static RMIClient rmiClient;
-    private Registry registry;
-    private static Remotable stub;
+    private static Registry registry;
+    MemberRemotable stub;
 
-    private RMIClient() throws RemoteException {
+
+    public RMIClient() throws RemoteException {
         registry = LocateRegistry.getRegistry();
     }
 
 
-    public static RMIClient getInstance()throws Exception{
+    public void getInstance()throws Exception{
         if(rmiClient == null){
             rmiClient = new RMIClient();
+            stub = (MemberRemotable) registry.lookup("Server");
         }
-        return rmiClient;
     }
+
+    public MemberRemotable getStub(){
+        return stub;
+    }
+
 
 
 }
