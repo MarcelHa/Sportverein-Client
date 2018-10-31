@@ -1,8 +1,10 @@
-package ui.controller;
+package ui.viewController;
 
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+
 import java.io.IOException;
 
 public class NavigationController extends SceneController {
@@ -34,6 +36,15 @@ public class NavigationController extends SceneController {
     @FXML
     public void switchToEditMember(ActionEvent actionEvent) throws IOException{
         super.switchScene(actionEvent, "editMember.fxml");
+    }
+
+    @FXML
+    public void switchToNewEvent(ActionEvent actionEvent) throws IOException{
+        super.switchScene(actionEvent, "newEvent.fxml");
+    }
+    @FXML
+    public void switchToEditEvent(ActionEvent actionEvent) throws IOException{
+        super.switchScene(actionEvent, "editEvent.fxml");
     }
 
 }
