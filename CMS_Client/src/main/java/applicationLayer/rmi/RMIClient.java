@@ -11,17 +11,20 @@ public class RMIClient {
 
     private static RMIClient rmiClient;
     private static Registry registry;
-    MemberRemotable stub;
+    private MemberRemotable stub;
 
 
     public RMIClient() throws RemoteException {
-        registry = LocateRegistry.getRegistry();
+        registry = LocateRegistry.getRegistry("172.22.32.123");
     }
 
 
     public void getInstance()throws Exception{
         if(rmiClient == null){
             rmiClient = new RMIClient();
+            if(System.getSecurityManager() == null){
+                System.setSecurityManager(new SecurityManager());
+            }
             stub = (MemberRemotable) registry.lookup("Server");
         }
     }
