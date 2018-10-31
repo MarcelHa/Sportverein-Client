@@ -4,7 +4,7 @@ import applicationLayer.interfaces.Iperson;
 
 import java.util.Date;
 
-public class Person implements Iperson {
+public class PersonDTO implements Iperson {
 
         private String _firstName;
         private String _lastName;
@@ -13,11 +13,11 @@ public class Person implements Iperson {
         private String _socialSecurityNumber;
 
 
-        public Person() {
+        public PersonDTO() {
 
         }
 
-        public Person(String firstName, String lastName, Date dateOfBirth, String userId, String socialSecurityNumber) {
+        public PersonDTO(String firstName, String lastName, Date dateOfBirth, String userId, String socialSecurityNumber) {
             _firstName = firstName;
             _lastName = lastName;
             _dateOfBirth = dateOfBirth;
