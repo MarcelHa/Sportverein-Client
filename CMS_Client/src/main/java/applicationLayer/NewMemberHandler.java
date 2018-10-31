@@ -1,14 +1,26 @@
 package applicationLayer;
 
-import applicationLayer.domain.Person;
+
 import applicationLayer.interfaces.Iperson;
 
 public class NewMemberHandler {
 
 
+    public void addNewMeber(Iperson person){
+        try {
+            RMIClient.getInstance().getStub().addMember(person);
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+    }
 
-    public void addNewMeber(Person person){
-        Iperson iperson = person;
+    public Iperson editMember(){
+        try {
+            return RMIClient.getInstance().getStub().editMember();
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
+        return null;
     }
 
 

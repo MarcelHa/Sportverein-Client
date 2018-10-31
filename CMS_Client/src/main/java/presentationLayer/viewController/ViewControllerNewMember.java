@@ -1,5 +1,6 @@
 package presentationLayer.viewController;
 
+import applicationLayer.NewMemberHandler;
 import applicationLayer.domain.Person;
 import applicationLayer.interfaces.Iperson;
 import javafx.event.ActionEvent;
@@ -9,12 +10,9 @@ import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import presentationLayer.SceneController;
-import presentationLayer.UtilDate;
+import utilities.UtilDate;
 
 import java.io.IOException;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.Date;
 
 public class ViewControllerNewMember extends SceneController {
@@ -62,15 +60,19 @@ public class ViewControllerNewMember extends SceneController {
     Presentation Layer Logic
      */
     @FXML
-    public void addNewMember(ActionEvent actionEvent) throws IOException{
-        Person person = new Person();
+    public void addNewMember(){
+        Iperson person = new Person();
 
         person.setFirstName(firstName.getText());
         person.setLastName(lastName.getText());
         person.setDateOfBirth(toDate(birthday));
         person.setSocialSecurityNumber(ssn.getText());
+
+        NewMemberHandler newMemberHandler = new NewMemberHandler();
+        newMemberHandler.addNewMeber(person);
     }
 
+    //Date Converter
     private Date toDate(DatePicker datePicker){
         UtilDate utilDate = new UtilDate();
         return  utilDate.convertToDate(datePicker.getValue());

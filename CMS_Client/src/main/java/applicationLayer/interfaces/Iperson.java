@@ -23,4 +23,6 @@ public interface Iperson {
     String getSocialSecurityNumber();
 
     void setSocialSecurityNumber(String socialSecurityNumber);
+
+
 }
