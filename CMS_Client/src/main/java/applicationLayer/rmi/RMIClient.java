@@ -1,37 +1,33 @@
 package applicationLayer.rmi;
 
-import applicationLayer.interfaces.EventRemotable;
 import applicationLayer.interfaces.MemberRemotable;
 
+import java.net.MalformedURLException;
+import java.rmi.Naming;
+import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
-import java.rmi.registry.LocateRegistry;
-import java.rmi.registry.Registry;
 
 public class RMIClient {
 
-    private static RMIClient rmiClient;
-    private static Registry registry;
-    private MemberRemotable stub;
 
+    public void rmi() throws RemoteException, NotBoundException, MalformedURLException{
 
-    public RMIClient() throws RemoteException {
-        registry = LocateRegistry.getRegistry("172.22.32.123");
+        System.setSecurityManager(new SecurityManager());
+        MemberRemotable stub = (MemberRemotable) Naming.lookup("rmi://172.22.32.123:1099/Server");
+        stub.test();
     }
 
-
-    public void getInstance()throws Exception{
+     /*public void getInstance()throws Exception{
         if(rmiClient == null){
             rmiClient = new RMIClient();
             if(System.getSecurityManager() == null){
                 System.setSecurityManager(new SecurityManager());
             }
-            stub = (MemberRemotable) registry.lookup("Server");
+            //stub = (MemberRemotable) registry.lookup("Server");
+            stub = (MemberRemotable) Naming.lookup("rmi://172.22.32.123:1099/Server");
         }
-    }
+    }*/
 
-    public MemberRemotable getStub(){
-        return stub;
-    }
 
 
 

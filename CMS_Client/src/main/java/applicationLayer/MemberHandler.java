@@ -1,17 +1,14 @@
 package applicationLayer;
 
-
-import applicationLayer.dto.PersonDTO;
 import applicationLayer.rmi.RMIClient;
 
 
 public class MemberHandler {
 
-    public void add(PersonDTO personDTO){
+    public void add(){
         try {
             RMIClient rmiClient = new RMIClient();
-            rmiClient.getInstance();
-            rmiClient.getStub().addMember(personDTO);
+            rmiClient.rmi();
         }catch (Exception e){
             e.printStackTrace();
         }
