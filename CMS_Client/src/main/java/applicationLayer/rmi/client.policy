@@ -1,4 +1,4 @@
-grant{
+grant {
     permission java.security.AllPermission;
-    permission java.net.SocketPermission "*:1099","connect,resolve";
+    permission java.net.SocketPermission "*:1099","listen,connect,accept,resolve";
 };

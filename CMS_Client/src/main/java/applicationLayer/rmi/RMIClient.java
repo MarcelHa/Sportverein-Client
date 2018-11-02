@@ -13,7 +13,7 @@ public class RMIClient {
     public void rmi() throws RemoteException, NotBoundException, MalformedURLException{
 
         System.setSecurityManager(new SecurityManager());
-        MemberRemotable stub = (MemberRemotable) Naming.lookup("rmi://172.22.32.123:1099/Server");
+        MemberRemotable stub = (MemberRemotable) Naming.lookup("rmi://localhost/Server");
         stub.test();
     }
 
