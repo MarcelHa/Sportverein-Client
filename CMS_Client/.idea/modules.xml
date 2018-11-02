@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Projekt_WS2018.iml" filepath="$PROJECT_DIR$/Projekt_WS2018.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CMS_Client.iml" filepath="$PROJECT_DIR$/CMS_Client.iml" />
     </modules>
   </component>
 </project>
