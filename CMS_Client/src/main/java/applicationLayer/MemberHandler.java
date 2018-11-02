@@ -5,7 +5,7 @@ import applicationLayer.rmi.RMIClient;
 
 public class MemberHandler {
 
-    public void add(){
+    public void doIt(){
         try {
             RMIClient rmiClient = new RMIClient();
             rmiClient.rmi();

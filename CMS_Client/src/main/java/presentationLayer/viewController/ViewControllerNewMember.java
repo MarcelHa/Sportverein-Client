@@ -13,6 +13,7 @@ import utilities.UtilDate;
 import java.io.IOException;
 import java.sql.Date;
 
+
 public class ViewControllerNewMember extends SceneController {
 
     @FXML
@@ -59,15 +60,15 @@ public class ViewControllerNewMember extends SceneController {
      */
     @FXML
     public void addNewMember(){
-        PersonDTO person = new PersonDTO();
 
+        PersonDTO person = new PersonDTO();
         person.setFirstName(firstName.getText());
         person.setLastName(lastName.getText());
         person.setDateOfBirth(toDate(birthday));
         person.setSocialSecurityNumber(ssn.getText());
 
         MemberHandler memberHandler = new MemberHandler();
-        memberHandler.add();
+        memberHandler.doIt();
     }
 
     //Date Converter

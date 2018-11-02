@@ -1,6 +1,7 @@
 package applicationLayer.rmi;
 
-import applicationLayer.interfaces.MemberRemotable;
+
+import rmi.interfaces.MemberRemotable;
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -12,9 +13,10 @@ public class RMIClient {
 
     public void rmi() throws RemoteException, NotBoundException, MalformedURLException{
 
+        // System.setProperty("java.security.policy", "file:./client.policy");
         System.setSecurityManager(new SecurityManager());
         MemberRemotable stub = (MemberRemotable) Naming.lookup("rmi://localhost/Server");
-        stub.test();
+        stub.doIt();
     }
 
      /*public void getInstance()throws Exception{
