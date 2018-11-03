@@ -27,15 +27,15 @@ public class RMIClient {
     }
 
 
-//    public MemberRemotable setMemberRemotable () throws RemoteException, NotBoundException, MalformedURLException {
-//        System.setSecurityManager(new SecurityManager());
-//        MemberRemotable stub = (MemberRemotable) Naming.lookup("rmi://" + serverIP + "/Server");
-//        return stub;
-//    }
+    public MemberRemotable setMemberRemotable () throws RemoteException, NotBoundException, MalformedURLException {
+        System.setSecurityManager(new SecurityManager());
+        MemberRemotable stub = (MemberRemotable) Naming.lookup("rmi://" + serverIP + "/Person");
+        return stub;
+    }
 
     public RoleRemotable setRoleRemotable () throws RemoteException, NotBoundException, MalformedURLException {
         System.setSecurityManager(new SecurityManager());
-        RoleRemotable stub = (RoleRemotable) Naming.lookup("rmi://" + serverIP + "/Server");
+        RoleRemotable stub = (RoleRemotable) Naming.lookup("rmi://" + serverIP + "/Roles");
         return stub;
     }
 
