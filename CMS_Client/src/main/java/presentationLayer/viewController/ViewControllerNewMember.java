@@ -1,7 +1,7 @@
 package presentationLayer.viewController;
 
 import applicationLayer.MemberHandler;
-import applicationLayer.dto.PersonDTO;
+import rmi.dto.PersonDTO;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -68,7 +68,7 @@ public class ViewControllerNewMember extends SceneController {
         person.setSocialSecurityNumber(ssn.getText());
 
         MemberHandler memberHandler = new MemberHandler();
-        memberHandler.addNewMember();
+        memberHandler.addNewMember(person);
     }
 
     //Date Converter

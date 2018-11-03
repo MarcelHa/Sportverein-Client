@@ -1,8 +1,9 @@
-package applicationLayer.dto;
+package rmi.dto;
 
+import java.io.Serializable;
 import java.sql.Date;
 
-public class PersonDTO {
+public class PersonDTO implements Serializable{
 
         private String _firstName;
         private String _lastName;
@@ -12,21 +13,21 @@ public class PersonDTO {
 
 
         //Default Constructor
-        public PersonDTO() {
+        //public PersonDTO() {
 
-        }
+       //}
 
         /*
         Setter & Getter for Data Transfer Objects
          */
-        public PersonDTO(String firstName, String lastName, Date dateOfBirth, String userId, String socialSecurityNumber) {
+       /* public PersonDTO(String firstName, String lastName, Date dateOfBirth, String userId, String socialSecurityNumber) {
             _firstName = firstName;
             _lastName = lastName;
             _dateOfBirth = dateOfBirth;
             _userId = userId;
             _socialSecurityNumber = socialSecurityNumber;
 
-        }
+        }*/
 
         public String getFirstName() {
             return _firstName;
