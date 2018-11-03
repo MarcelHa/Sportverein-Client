@@ -22,9 +22,6 @@ public class ViewControllerNewMember extends SceneController {
     TextField firstName, lastName, ssn;
     @FXML
     DatePicker birthday;
-    @FXML
-    ChoiceBox team;
-
 
     /*
     Simple Dashboard Navigation
@@ -62,6 +59,7 @@ public class ViewControllerNewMember extends SceneController {
     public void addNewMember(){
 
         PersonDTO person = new PersonDTO();
+        person.setUserId("");
         person.setFirstName(firstName.getText());
         person.setLastName(lastName.getText());
         person.setDateOfBirth(toDate(birthday));

@@ -3,69 +3,63 @@ package rmi.dto;
 import java.io.Serializable;
 import java.sql.Date;
 
-public class PersonDTO implements Serializable{
+public class PersonDTO implements Serializable {
 
-        private String _firstName;
-        private String _lastName;
-        private Date _dateOfBirth;
-        private String _userId;
-        private String _socialSecurityNumber;
+    private static final long serialVersionUID = 7181607601291344700L;
+
+    private String _firstName;
+    private String _lastName;
+    private Date _dateOfBirth;
+    private String _userId;
+    private String _socialSecurityNumber;
+    private int _personID;
 
 
-        //Default Constructor
-        //public PersonDTO() {
+    public String getFirstName() {
+        return _firstName;
+    }
 
-       //}
+    public void setFirstName(String firstName) {
+        _firstName = firstName;
+    }
 
-        /*
-        Setter & Getter for Data Transfer Objects
-         */
-       /* public PersonDTO(String firstName, String lastName, Date dateOfBirth, String userId, String socialSecurityNumber) {
-            _firstName = firstName;
-            _lastName = lastName;
-            _dateOfBirth = dateOfBirth;
-            _userId = userId;
-            _socialSecurityNumber = socialSecurityNumber;
+    public String getLastName() {
+        return _lastName;
+    }
 
-        }*/
+    public void setLastName(String lastName) {
+        _lastName = lastName;
+    }
 
-        public String getFirstName() {
-            return _firstName;
-        }
+    public Date getDateOfBirth() {
+        return _dateOfBirth;
+    }
 
-        public void setFirstName(String firstName) {
-            _firstName = firstName;
-        }
+    public void setDateOfBirth(Date dateOfBirth) {
+        _dateOfBirth = dateOfBirth;
+    }
 
-        public String getLastName() {
-            return _lastName;
-        }
+    public String getUserId() {
+        return _userId;
+    }
 
-        public void setLastName(String lastName) {
-            _lastName = lastName;
-        }
+    public void setUserId(String userId) {
+        _userId = userId;
+    }
 
-        public Date getDateOfBirth() {
-            return _dateOfBirth;
-        }
+    public String getSocialSecurityNumber() {
+        return _socialSecurityNumber;
+    }
 
-        public void setDateOfBirth(Date dateOfBirth) {
-            _dateOfBirth = dateOfBirth;
-        }
+    public void setSocialSecurityNumber(String socialSecurityNumber) {
+        _socialSecurityNumber = socialSecurityNumber;
+    }
 
-        public String getUserId() {
-            return _userId;
-        }
+    public int getPersonID() {
+        return _personID;
+    }
 
-        public void setUserId(String userId) {
-            _userId = userId;
-        }
-
-        public String getSocialSecurityNumber() {
-            return _socialSecurityNumber;
-        }
-
-        public void setSocialSecurityNumber(String socialSecurityNumber) {
-            _socialSecurityNumber = socialSecurityNumber;
-        }
+    public void setPersonID(int _personId) {
+        this._personID = _personId;
+    }
 }
