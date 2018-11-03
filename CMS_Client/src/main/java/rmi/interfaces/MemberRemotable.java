@@ -5,5 +5,5 @@ import java.rmi.RemoteException;
 
 public interface MemberRemotable extends Remote {
 
-    void doIt() throws RemoteException;
+    void addNewMember() throws RemoteException;
 }

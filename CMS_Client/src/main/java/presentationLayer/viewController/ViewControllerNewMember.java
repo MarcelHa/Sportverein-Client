@@ -68,7 +68,7 @@ public class ViewControllerNewMember extends SceneController {
         person.setSocialSecurityNumber(ssn.getText());
 
         MemberHandler memberHandler = new MemberHandler();
-        memberHandler.doIt();
+        memberHandler.addNewMember();
     }
 
     //Date Converter

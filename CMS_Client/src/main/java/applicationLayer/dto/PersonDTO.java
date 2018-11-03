@@ -11,10 +11,14 @@ public class PersonDTO {
         private String _socialSecurityNumber;
 
 
+        //Default Constructor
         public PersonDTO() {
 
         }
 
+        /*
+        Setter & Getter for Data Transfer Objects
+         */
         public PersonDTO(String firstName, String lastName, Date dateOfBirth, String userId, String socialSecurityNumber) {
             _firstName = firstName;
             _lastName = lastName;

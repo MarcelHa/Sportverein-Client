@@ -1,14 +1,15 @@
 package applicationLayer;
 
-import applicationLayer.rmi.RMIClient;
-
+import rmi.RMIClient;
+/*
+Is used by the presentation layer for the View Controller New Member
+ */
 
 public class MemberHandler {
 
-    public void doIt(){
+    public void addNewMember(){
         try {
-            RMIClient rmiClient = new RMIClient();
-            rmiClient.rmi();
+            RMIClient.getInstance().setMemberRemotable().addNewMember();
         }catch (Exception e){
             e.printStackTrace();
         }
