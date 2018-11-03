@@ -11,6 +11,9 @@ import javafx.scene.control.TextField;
 import presentationLayer.SceneController;
 import utilities.UtilDate;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
 import java.sql.Date;
 
 
@@ -56,7 +59,7 @@ public class ViewControllerNewMember extends SceneController {
     Presentation Layer Logic
      */
     @FXML
-    public void addNewMember(){
+    public void addNewMember() throws RemoteException, NotBoundException, MalformedURLException {
 
         PersonDTO person = new PersonDTO();
         person.setUserId("");
