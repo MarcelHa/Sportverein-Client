@@ -10,6 +10,8 @@ import java.rmi.RemoteException;
 
 public class RMIClient {
 
+    private static String serverIP = "10.0.0.18";
+
     private static RMIClient rmiClient;
 
     private RMIClient(){}
@@ -26,7 +28,7 @@ public class RMIClient {
 
     public MemberRemotable setMemberRemotable () throws RemoteException, NotBoundException, MalformedURLException {
         System.setSecurityManager(new SecurityManager());
-        MemberRemotable stub = (MemberRemotable) Naming.lookup("rmi://172.22.32.37/Server");
+        MemberRemotable stub = (MemberRemotable) Naming.lookup("rmi://" + serverIP + "/Server");
         return stub;
     }
 
