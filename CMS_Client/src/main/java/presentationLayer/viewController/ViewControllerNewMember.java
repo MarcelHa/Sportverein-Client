@@ -62,7 +62,6 @@ public class ViewControllerNewMember extends SceneController {
     public void addNewMember() throws RemoteException, NotBoundException, MalformedURLException {
 
         PersonDTO person = new PersonDTO();
-        person.setUserId("");
         person.setFirstName(firstName.getText());
         person.setLastName(lastName.getText());
         person.setDateOfBirth(toDate(birthday));

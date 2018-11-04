@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.viewController.ViewControllerNewMember">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.viewController.ViewControllerNewMember">
    <children>
       <Pane prefHeight="170.0" prefWidth="1000.0" style="-fx-background-color: #44bba4;">
          <children>
@@ -141,6 +141,7 @@
             <Font size="15.0" />
          </font>
       </Button>
+      <Label layoutX="189.0" layoutY="389.0" text="Roles" />
    </children>
    <effect>
       <DropShadow />
