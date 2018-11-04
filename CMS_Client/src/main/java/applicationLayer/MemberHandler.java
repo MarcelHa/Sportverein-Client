@@ -26,4 +26,8 @@ public class MemberHandler {
         return RMIClient.getInstance().setMemberRemotable().addRolesToPersonDTO(personDTO);
     }
 
+    public void deleteMember(PersonDTO personDTO) throws RemoteException, NotBoundException, MalformedURLException {
+        RMIClient.getInstance().setMemberRemotable().deleteMember(personDTO);
+    }
+
 }

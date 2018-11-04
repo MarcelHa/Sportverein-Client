@@ -74,7 +74,7 @@ public class ViewControllerEditMember extends  SceneController  implements Initi
 
 
         try {
-            _personDTOList = _memberHandler.getAllMember();
+            _memberHandler.deleteMember(_personDTOList.get(23));
         } catch (RemoteException e) {
             e.printStackTrace();
         } catch (NotBoundException e) {
@@ -82,7 +82,6 @@ public class ViewControllerEditMember extends  SceneController  implements Initi
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-
 
         _personDTOObservableListList = FXCollections.observableList(_personDTOList);
 

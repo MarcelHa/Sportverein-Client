@@ -11,7 +11,7 @@ public interface MemberRemotable extends Remote {
 
     void addNewMember(PersonDTO personDTO) throws RemoteException;
 
-    void deleteMember(int personID)throws RemoteException;
+    void deleteMember(PersonDTO personDTO)throws RemoteException;
 
     void updateMember(PersonDTO personDTO) throws RemoteException;
 
