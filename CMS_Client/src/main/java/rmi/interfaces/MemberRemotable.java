@@ -21,4 +21,6 @@ public interface MemberRemotable extends Remote {
 
     List<RoleDTO> getRolesFromPersonDto(PersonDTO person) throws RemoteException;
 
+    List<RoleDTO> getAllRoles() throws RemoteException;
+
 }

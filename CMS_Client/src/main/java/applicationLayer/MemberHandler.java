@@ -22,12 +22,29 @@ public class MemberHandler {
         return RMIClient.getInstance().setMemberRemotable().getAllMember();
     }
 
-    public PersonDTO addRoleToPersonDTO (PersonDTO personDTO) throws RemoteException, NotBoundException, MalformedURLException {
-        return RMIClient.getInstance().setMemberRemotable().addRolesToPersonDTO(personDTO);
-    }
 
     public void deleteMember(PersonDTO personDTO) throws RemoteException, NotBoundException, MalformedURLException {
         RMIClient.getInstance().setMemberRemotable().deleteMember(personDTO);
     }
+
+    public void updateMember(PersonDTO personDTO) throws RemoteException, NotBoundException, MalformedURLException {
+        RMIClient.getInstance().setMemberRemotable().updateMember(personDTO);
+    }
+
+
+    public PersonDTO addRolesToPersonDTO(PersonDTO person) throws RemoteException,  NotBoundException, MalformedURLException {
+        return RMIClient.getInstance().setMemberRemotable().addRolesToPersonDTO(person);
+    }
+
+    public List<RoleDTO> getRolesFromPersonDto(PersonDTO person) throws RemoteException,  NotBoundException, MalformedURLException {
+        return RMIClient.getInstance().setMemberRemotable().getRolesFromPersonDto(person);
+    }
+
+    List<RoleDTO> getAllRoles() throws RemoteException,  NotBoundException, MalformedURLException {
+        return RMIClient.getInstance().setMemberRemotable().getAllRoles();
+    }
+
+
+
 
 }

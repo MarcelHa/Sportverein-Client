@@ -71,10 +71,8 @@ public class ViewControllerEditMember extends  SceneController  implements Initi
     @Override
     public void initialize(URL location, ResourceBundle resources)  {
 
-
-
         try {
-            _memberHandler.deleteMember(_personDTOList.get(23));
+            _personDTOList = _memberHandler.getAllMember();
         } catch (RemoteException e) {
             e.printStackTrace();
         } catch (NotBoundException e) {
