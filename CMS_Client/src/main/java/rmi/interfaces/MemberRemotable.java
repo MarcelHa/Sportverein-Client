@@ -1,6 +1,7 @@
 package rmi.interfaces;
 
 import rmi.dto.PersonDTO;
+import rmi.dto.RoleDTO;
 
 import java.rmi.Remote;
 import java.rmi.RemoteException;
@@ -15,5 +16,9 @@ public interface MemberRemotable extends Remote {
     void updateMember(PersonDTO personDTO) throws RemoteException;
 
     List<PersonDTO> getAllMember() throws RemoteException;
+
+    PersonDTO addRolesToPersonDTO(PersonDTO person) throws RemoteException;
+
+    List<RoleDTO> getRolesFromPersonDto(PersonDTO person) throws RemoteException;
 
 }

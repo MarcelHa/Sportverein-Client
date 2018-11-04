@@ -22,5 +22,8 @@ public class MemberHandler {
         return RMIClient.getInstance().setMemberRemotable().getAllMember();
     }
 
+    public PersonDTO addRoleToPersonDTO (PersonDTO personDTO) throws RemoteException, NotBoundException, MalformedURLException {
+        return RMIClient.getInstance().setMemberRemotable().addRolesToPersonDTO(personDTO);
+    }
 
 }

@@ -69,7 +69,10 @@ public class ViewControllerEditMember extends  SceneController  implements Initi
      */
 
     @Override
-    public void initialize(URL location, ResourceBundle resources) {
+    public void initialize(URL location, ResourceBundle resources)  {
+
+
+
         try {
             _personDTOList = _memberHandler.getAllMember();
         } catch (RemoteException e) {
@@ -79,6 +82,8 @@ public class ViewControllerEditMember extends  SceneController  implements Initi
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
+
+
         _personDTOObservableListList = FXCollections.observableList(_personDTOList);
 
         _membersTableView.setItems(_personDTOObservableListList);
