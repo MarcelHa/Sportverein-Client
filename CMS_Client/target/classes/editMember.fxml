@@ -16,8 +16,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.viewController.NavigationController">
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.viewController.ViewControllerEditMember">
    <children>
       <Pane prefHeight="170.0" prefWidth="1000.0" style="-fx-background-color: #44bba4;">
          <children>
@@ -115,14 +118,30 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Label>
-      <TableView layoutX="185.0" layoutY="256.0" prefHeight="200.0" prefWidth="376.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="First name" />
-          <TableColumn prefWidth="75.0" text="Last name" />
-            <TableColumn prefWidth="75.0" text="Birthday" />
-            <TableColumn prefWidth="75.0" text="SSC" />
+      <TableView fx:id="_membersTableView" editable="true" layoutX="185.0" layoutY="256.0" prefHeight="200.0" prefWidth="376.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="First name" >
+               <cellValueFactory>
+                  <PropertyValueFactory property="firstName" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn id="lastName" prefWidth="75.0" text="Last Name" >
+               <cellValueFactory>
+                  <PropertyValueFactory property="lastName" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn id="dateOfBirth" prefWidth="75.0" text="Birthday" >
+               <cellValueFactory>
+                  <PropertyValueFactory property="dateOfBirth" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn id="socialSecurityNumber" prefWidth="75.0" text="SSC" >
+               <cellValueFactory>
+                  <PropertyValueFactory property="socialSecurityNumber" />
+               </cellValueFactory>
+            </TableColumn>
             <TableColumn prefWidth="75.0" text="Team" />
-        </columns>
+         </columns>
       </TableView>
       <Label layoutX="671.0" layoutY="256.0" text="First name">
          <font>

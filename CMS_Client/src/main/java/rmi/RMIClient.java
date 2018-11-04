@@ -29,7 +29,7 @@ public class RMIClient {
 
     public MemberRemotable setMemberRemotable () throws RemoteException, NotBoundException, MalformedURLException {
         System.setSecurityManager(new SecurityManager());
-        MemberRemotable stub = (MemberRemotable) Naming.lookup("rmi://" + serverIP + "/Person");
+        MemberRemotable stub = (MemberRemotable) Naming.lookup("rmi://" + serverIP + "/Members");
         return stub;
     }
 

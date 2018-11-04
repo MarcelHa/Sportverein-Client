@@ -17,4 +17,10 @@ public class MemberHandler {
     public void addNewMember(PersonDTO personDTO) throws RemoteException, NotBoundException, MalformedURLException {
         RMIClient.getInstance().setMemberRemotable().addNewMember(personDTO);
     }
+
+    public List<PersonDTO> getAllMember() throws RemoteException, NotBoundException, MalformedURLException {
+        return RMIClient.getInstance().setMemberRemotable().getAllMember();
+    }
+
+
 }
