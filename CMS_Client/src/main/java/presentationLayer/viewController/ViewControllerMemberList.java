@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import presentationLayer.CareTaker;
 import presentationLayer.SceneController;
 import rmi.dto.PersonDTO;
 
@@ -29,13 +30,10 @@ public class ViewControllerMemberList extends  SceneController  implements Initi
     @FXML
     private TextField _filterField;
 
-
     private MemberHandler _memberHandler = new MemberHandler();
     private List<PersonDTO> _personDTOList;
     private ObservableList<PersonDTO> _personDTOObservableListList;
 
-    public ViewControllerMemberList() throws RemoteException, NotBoundException, MalformedURLException {
-    }
 
     /*
     Simple Dashboard Navigation
@@ -65,14 +63,9 @@ public class ViewControllerMemberList extends  SceneController  implements Initi
         super.switchScene(actionEvent, "newMember.fxml");
     }
 
-
-
-
-
     /*
     Presentation Layer Logic
      */
-
     @Override
     public void initialize(URL location, ResourceBundle resources)  {
 
@@ -126,16 +119,21 @@ public class ViewControllerMemberList extends  SceneController  implements Initi
     }
 
 
-    @FXML
-    public void editMember() {
-
+    public PersonDTO editMember(){
+       return _membersTableView.getSelectionModel().getSelectedItem();
     }
 
     @FXML
     public void deleteMember(ActionEvent actionEvent) throws IOException, NotBoundException {
         _memberHandler.deleteMember(_membersTableView.getSelectionModel().getSelectedItem());
         super.switchScene(actionEvent, "Member.fxml");
+    }
 
+    @FXML
+    private void innerSave(ActionEvent actionEvent) throws IOException, NotBoundException{
+        PersonDTO personDTO = editMember();
+        CareTaker.add(personDTO);
+        super.switchScene(actionEvent, "EditMember.fxml");
     }
 
 

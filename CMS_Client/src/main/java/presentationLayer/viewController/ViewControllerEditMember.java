@@ -118,7 +118,6 @@ public class ViewControllerEditMember extends SceneController implements Initial
         _availableRoles.refresh();
         _attachedRoles.refresh();
     }
-
     @FXML
     public void addNewMember() throws RemoteException, NotBoundException, MalformedURLException {
 
