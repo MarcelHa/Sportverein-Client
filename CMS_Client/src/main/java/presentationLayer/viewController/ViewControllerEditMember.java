@@ -74,10 +74,15 @@ public class ViewControllerEditMember extends SceneController implements Initial
         _attachedRolesList = mementoDTO.getRoleDTOList();
 
         for (RoleDTO roleDTO:_availableRolesList) {
-            if (mementoDTO.getRoleDTOList().contains(roleDTO)) {
+            if (mementoDTO.getRoleDTOList() != null && mementoDTO.getRoleDTOList().contains(roleDTO)) {
                 _availableRolesList.remove(roleDTO);
             }
         }
+
+        if (_attachedRolesList == null) {
+            _attachedRolesList = new LinkedList<RoleDTO>();
+        }
+
         _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
         _attachedRolesObservableList = FXCollections.observableList(_attachedRolesList);
         _availableRoles.setItems(_availableRolesObservableList);
