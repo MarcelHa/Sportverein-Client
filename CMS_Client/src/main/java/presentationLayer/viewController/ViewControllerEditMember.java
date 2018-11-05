@@ -3,9 +3,12 @@ package presentationLayer.viewController;
 import applicationLayer.MemberHandler;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.collections.transformation.FilteredList;
+import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.TextField;
 import presentationLayer.SceneController;
 
 import javafx.scene.control.TableView;
@@ -25,9 +28,15 @@ public class ViewControllerEditMember extends  SceneController  implements Initi
 
     @FXML
     private TableView<PersonDTO> _membersTableView;
+
+    @FXML
+    private TextField _filterField;
+
     private MemberHandler _memberHandler = new MemberHandler();
     private List<PersonDTO> _personDTOList;
     private ObservableList<PersonDTO> _personDTOObservableListList;
+
+
 
     public ViewControllerEditMember() throws RemoteException, NotBoundException, MalformedURLException {
     }
@@ -84,6 +93,37 @@ public class ViewControllerEditMember extends  SceneController  implements Initi
         _personDTOObservableListList = FXCollections.observableList(_personDTOList);
 
         _membersTableView.setItems(_personDTOObservableListList);
+
+        FilteredList<PersonDTO> filteredData = new FilteredList<>(_personDTOObservableListList, p -> true);
+
+        _filterField.textProperty().addListener((observable, oldValue, newValue) -> {
+            filteredData.setPredicate(person -> {
+                // If filter text is empty, display all persons.
+                if (newValue == null || newValue.isEmpty()) {
+                    return true;
+                }
+
+                // Compare first name and last name of every person with filter text.
+                String lowerCaseFilter = newValue.toLowerCase();
+
+                if (person.getFirstName() != null && person.getFirstName().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; // Filter matches first name.
+                } else if (person.getLastName() != null && person.getLastName().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; // Filter matches last name.
+                } else if (person.getSocialSecurityNumber() != null && person.getSocialSecurityNumber().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; // Filter matches last name.
+                } else if (person.getUserId() != null && person.getUserId().toLowerCase().contains(lowerCaseFilter)) {
+                    return true; // Filter matches last name.
+                }
+                return false; // Does not match.
+            });
+        });
+
+        SortedList<PersonDTO> sortedData = new SortedList<>(filteredData);
+
+        sortedData.comparatorProperty().bind(_membersTableView.comparatorProperty());
+
+        _membersTableView.setItems(sortedData);
 
     }
 
