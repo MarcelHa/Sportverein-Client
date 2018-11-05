@@ -139,7 +139,7 @@
             <TableColumn prefWidth="75.0" text="Team" />
          </columns>
       </TableView>
-      <Button fx:id="_editButton" layoutX="724.0" layoutY="277.0" mnemonicParsing="false" onAction="#editMember" prefHeight="39.0" prefWidth="150.0" text="EDIT" />
+      <Button fx:id="_editButton" layoutX="724.0" layoutY="277.0" mnemonicParsing="false" onAction="#innerSave" prefHeight="39.0" prefWidth="150.0" text="EDIT" />
       <Button fx:id="_deleteButton" defaultButton="true" layoutX="724.0" layoutY="366.0" mnemonicParsing="false" onAction="#deleteMember" prefHeight="39.0" prefWidth="150.0" text="DELETE">
          <font>
             <Font size="15.0" />

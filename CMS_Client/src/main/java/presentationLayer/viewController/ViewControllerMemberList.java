@@ -13,7 +13,6 @@ import javafx.scene.control.TextField;
 import presentationLayer.CareTaker;
 import presentationLayer.SceneController;
 import rmi.dto.PersonDTO;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -118,29 +117,22 @@ public class ViewControllerMemberList extends  SceneController  implements Initi
 
     }
 
-
-<<<<<<< HEAD
-    @FXML
-    public void editMember() throws RemoteException, NotBoundException, MalformedURLException {
-     
-=======
-    public PersonDTO editMember(){
-       return _membersTableView.getSelectionModel().getSelectedItem();
->>>>>>> MementoEditMember
-    }
-
     @FXML
     public void deleteMember(ActionEvent actionEvent) throws IOException, NotBoundException {
+        super.switchScene(actionEvent, "member.fxml");
         _memberHandler.deleteMember(_membersTableView.getSelectionModel().getSelectedItem());
-        super.switchScene(actionEvent, "Member.fxml");
+
     }
 
     @FXML
-    private void innerSave(ActionEvent actionEvent) throws IOException, NotBoundException{
-        PersonDTO personDTO = editMember();
-        CareTaker.add(personDTO);
-        super.switchScene(actionEvent, "EditMember.fxml");
+    public void innerSave(ActionEvent actionEvent) throws IOException, NotBoundException{
+        CareTaker.add(editMember());
+        super.switchScene(actionEvent, "editMember.fxml");
     }
 
+    @FXML
+    private PersonDTO editMember() throws RemoteException, NotBoundException, MalformedURLException {
+        return _membersTableView.getSelectionModel().getSelectedItem();
+    }
 
 }
