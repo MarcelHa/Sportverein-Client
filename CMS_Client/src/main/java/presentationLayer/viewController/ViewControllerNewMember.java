@@ -52,9 +52,7 @@ public class ViewControllerNewMember extends SceneController implements Initiali
     private List<RoleDTO> _attachedRolesList = new LinkedList<RoleDTO>();
 
 
-
     private MemberHandler _memberHandler = new MemberHandler();
-
 
 
     /*
@@ -64,37 +62,40 @@ public class ViewControllerNewMember extends SceneController implements Initiali
     public void switchToMember(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "member.fxml");
     }
+
     @FXML
-    public void switchToClub(ActionEvent actionEvent) throws IOException{
+    public void switchToClub(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "club.fxml");
     }
+
     @FXML
-    public void switchToEvent(ActionEvent actionEvent) throws IOException{
+    public void switchToEvent(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "event.fxml");
     }
+
     @FXML
-    public void switchToHome(ActionEvent actionEvent) throws IOException{
+    public void switchToHome(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "home.fxml");
     }
+
     @FXML
-    public void switchToResult(ActionEvent actionEvent) throws IOException{
+    public void switchToResult(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "result.fxml");
     }
+
     @FXML
-    public void switchToEditMember(ActionEvent actionEvent) throws IOException{
+    public void switchToEditMember(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "editMember.fxml");
     }
+
     @FXML
-    public void switchToMemberList(ActionEvent actionEvent) throws IOException{
+    public void switchToMemberList(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "memberList.fxml");
     }
 
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-
-        System.out.println("test");
-
         try {
             _availableRolesList = _memberHandler.getAllRoles();
         } catch (RemoteException e) {
@@ -104,9 +105,6 @@ public class ViewControllerNewMember extends SceneController implements Initiali
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-
-
-
         _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
 
         _attachedRolesObservableList = FXCollections.observableList(_attachedRolesList);
@@ -114,21 +112,14 @@ public class ViewControllerNewMember extends SceneController implements Initiali
         _availableRoles.setItems(_availableRolesObservableList);
 
         _attachedRoles.setItems(_attachedRolesObservableList);
-
-
-
     }
-
-
-
 
     /*
     Presentation Layer Logic
      */
-
     @FXML
     public void addRole() {
-        if(_availableRolesList.remove(_availableRoles.getSelectionModel().getSelectedItem())) {
+        if (_availableRolesList.remove(_availableRoles.getSelectionModel().getSelectedItem())) {
             _attachedRolesList.add(_availableRoles.getSelectionModel().getSelectedItem());
         }
         _availableRoles.refresh();
@@ -137,7 +128,7 @@ public class ViewControllerNewMember extends SceneController implements Initiali
 
     @FXML
     public void deleteRole() {
-        if(_attachedRolesList.remove(_attachedRoles.getSelectionModel().getSelectedItem())) {
+        if (_attachedRolesList.remove(_attachedRoles.getSelectionModel().getSelectedItem())) {
             _availableRolesList.add(_attachedRoles.getSelectionModel().getSelectedItem());
         }
         _availableRoles.refresh();
@@ -147,7 +138,7 @@ public class ViewControllerNewMember extends SceneController implements Initiali
 
     @FXML
     public void addNewMember(ActionEvent actionEvent) throws IOException, NotBoundException {
-
+        super.switchScene(actionEvent, "Member.fxml");
         PersonDTO person = new PersonDTO();
         person.setFirstName(firstName.getText());
         person.setLastName(lastName.getText());
@@ -155,13 +146,13 @@ public class ViewControllerNewMember extends SceneController implements Initiali
         person.setSocialSecurityNumber(ssn.getText());
         person.setRoleDTOList(_attachedRolesList);
         _memberHandler.addNewMember(person);
-        super.switchScene(actionEvent, "Member.fxml");
+
 
 
     }
 
     //Date Converter
-    private Date toDate(DatePicker datePicker){
+    private Date toDate(DatePicker datePicker) {
         return UtilDate.convertToSQLDate(datePicker.getValue());
     }
 

@@ -2,7 +2,7 @@ package rmi;
 
 
 import rmi.interfaces.MemberRemotable;
-//import rmi.interfaces.RoleRemotable;
+
 
 import java.net.MalformedURLException;
 import java.rmi.Naming;
@@ -11,7 +11,7 @@ import java.rmi.RemoteException;
 
 public class RMIClient {
 
-    private static String serverIP = "10.0.0.18";
+    private static String serverIP = "172.22.32.123";
 
     private static RMIClient rmiClient;
 
@@ -26,7 +26,6 @@ public class RMIClient {
         return rmiClient;
     }
 
-
     public MemberRemotable setMemberRemotable () throws RemoteException, NotBoundException, MalformedURLException {
         System.setSecurityManager(new SecurityManager());
         MemberRemotable stub = (MemberRemotable) Naming.lookup("rmi://" + serverIP + "/Members");
@@ -38,5 +37,7 @@ public class RMIClient {
 //        RoleRemotable stub = (RoleRemotable) Naming.lookup("rmi://" + serverIP + "/Roles");
 //        return stub;
 //    }
+
+
 
 }

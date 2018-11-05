@@ -24,22 +24,15 @@ import java.util.ResourceBundle;
 
 public class ViewControllerMemberList extends  SceneController  implements Initializable {
 
-
     @FXML
     private TableView<PersonDTO> _membersTableView;
-
     @FXML
     private TextField _filterField;
-
-
-
 
 
     private MemberHandler _memberHandler = new MemberHandler();
     private List<PersonDTO> _personDTOList;
     private ObservableList<PersonDTO> _personDTOObservableListList;
-
-
 
     public ViewControllerMemberList() throws RemoteException, NotBoundException, MalformedURLException {
     }
