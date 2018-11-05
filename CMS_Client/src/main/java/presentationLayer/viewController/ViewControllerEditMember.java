@@ -128,10 +128,8 @@ public class ViewControllerEditMember extends SceneController implements Initial
         person.setDateOfBirth(toDate(birthday));
         person.setSocialSecurityNumber(ssn.getText());
         person.setRoleDTOList(_attachedRolesList);
+
         _memberHandler.addNewMember(person);
-        System.out.println("test");
-
-
     }
 
     //Date Converter

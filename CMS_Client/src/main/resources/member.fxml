@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.viewController.NavigationController">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.viewController.NavigationController">
    <children>
       <Pane prefHeight="170.0" prefWidth="1000.0" style="-fx-background-color: #44bba4;">
          <children>
@@ -84,12 +84,12 @@
          </image>
       </ImageView>
       <Separator layoutX="145.0" layoutY="170.0" orientation="VERTICAL" prefHeight="430.0" prefWidth="40.0" />
-      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="285.0" onAction="#switchToEditMember" prefHeight="35.0" prefWidth="130.0" text="NEW MEMBER" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="285.0" onAction="#switchToNewMember" prefHeight="35.0" prefWidth="130.0" text="NEW MEMBER" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
       </JFXButton>
-      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="250.0" onAction="#switchToNewMember" prefHeight="35.0" prefWidth="130.0" text="MEMBERLIST" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="250.0" onAction="#switchToMemberList" prefHeight="35.0" prefWidth="130.0" text="MEMBERLIST" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>

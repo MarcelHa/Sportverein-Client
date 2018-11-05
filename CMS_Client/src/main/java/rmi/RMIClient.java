@@ -11,7 +11,7 @@ import java.rmi.RemoteException;
 
 public class RMIClient {
 
-    private static String serverIP = "172.22.32.123";
+    private static String serverIP = "172.22.32.37";
 
     private static RMIClient rmiClient;
 
@@ -37,7 +37,4 @@ public class RMIClient {
 //        RoleRemotable stub = (RoleRemotable) Naming.lookup("rmi://" + serverIP + "/Roles");
 //        return stub;
 //    }
-
-
-
 }

@@ -16,7 +16,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.viewController.ViewControllerMemberList">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.viewController.ViewControllerMemberList">
    <children>
       <Pane prefHeight="170.0" prefWidth="1000.0" style="-fx-background-color: #44bba4;">
          <children>
@@ -94,7 +94,7 @@
             <Font name="System Bold" size="13.0" />
          </font>
       </JFXButton>
-      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="250.0" prefHeight="35.0" prefWidth="130.0" text="Memberlist" textFill="#44bba4" underline="true">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="250.0" prefHeight="35.0" prefWidth="130.0" text="MEMBER LIST" textFill="#44bba4" underline="true">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
