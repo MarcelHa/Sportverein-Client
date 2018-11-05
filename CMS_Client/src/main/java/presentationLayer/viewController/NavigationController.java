@@ -46,5 +46,9 @@ public class NavigationController extends SceneController {
     public void switchToEditEvent(ActionEvent actionEvent) throws IOException{
         super.switchScene(actionEvent, "editEvent.fxml");
     }
+    @FXML
+    public void switchToMemberList(ActionEvent actionEvent) throws IOException{
+        super.switchScene(actionEvent, "memberList.fxml");
+    }
 
 }

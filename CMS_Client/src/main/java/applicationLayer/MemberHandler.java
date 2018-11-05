@@ -40,7 +40,7 @@ public class MemberHandler {
         return RMIClient.getInstance().setMemberRemotable().getRolesFromPersonDto(person);
     }
 
-    List<RoleDTO> getAllRoles() throws RemoteException,  NotBoundException, MalformedURLException {
+    public List<RoleDTO> getAllRoles() throws RemoteException,  NotBoundException, MalformedURLException {
         return RMIClient.getInstance().setMemberRemotable().getAllRoles();
     }
 

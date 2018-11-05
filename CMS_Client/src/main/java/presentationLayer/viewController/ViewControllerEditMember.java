@@ -3,43 +3,63 @@ package presentationLayer.viewController;
 import applicationLayer.MemberHandler;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.collections.transformation.FilteredList;
-import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import presentationLayer.SceneController;
-
-import javafx.scene.control.TableView;
 import rmi.dto.PersonDTO;
+import rmi.dto.RoleDTO;
+import utilities.UtilDate;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
+import java.sql.Date;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.ResourceBundle;
 
 
-public class ViewControllerEditMember extends  SceneController  implements Initializable {
-
-
-    @FXML
-    private TableView<PersonDTO> _membersTableView;
+public class ViewControllerEditMember extends SceneController implements Initializable {
 
     @FXML
-    private TextField _filterField;
+    Button addMember;
+    @FXML
+    TextField firstName, lastName, ssn;
+    @FXML
+    DatePicker birthday;
+
+    @FXML
+    private Button _giveRole;
+
+    @FXML
+    private Button _deleteRole;
+
+    @FXML
+    private TableView<RoleDTO> _availableRoles;
+
+    @FXML
+    private TableView<RoleDTO> _attachedRoles;
+
+    private List<RoleDTO> _availableRolesList;
+
+    private ObservableList<RoleDTO> _availableRolesObservableList;
+
+    private ObservableList<RoleDTO> _attachedRolesObservableList;
+
+    private List<RoleDTO> _attachedRolesList = new LinkedList<RoleDTO>();
+
+
 
     private MemberHandler _memberHandler = new MemberHandler();
-    private List<PersonDTO> _personDTOList;
-    private ObservableList<PersonDTO> _personDTOObservableListList;
 
 
-
-    public ViewControllerEditMember() throws RemoteException, NotBoundException, MalformedURLException {
-    }
 
     /*
     Simple Dashboard Navigation
@@ -48,6 +68,11 @@ public class ViewControllerEditMember extends  SceneController  implements Initi
     public void switchToMember(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "member.fxml");
     }
+    @FXML
+    public void switchToNewMember(ActionEvent actionEvent) throws IOException{
+        super.switchScene(actionEvent, "newMember.fxml");
+    }
+
     @FXML
     public void switchToClub(ActionEvent actionEvent) throws IOException{
         super.switchScene(actionEvent, "club.fxml");
@@ -65,23 +90,18 @@ public class ViewControllerEditMember extends  SceneController  implements Initi
         super.switchScene(actionEvent, "result.fxml");
     }
     @FXML
-    public void switchToNewMember(ActionEvent actionEvent) throws IOException {
-        super.switchScene(actionEvent, "newMember.fxml");
+    public void switchToMemberList(ActionEvent actionEvent) throws IOException{
+        super.switchScene(actionEvent, "memberList.fxml");
     }
 
 
-
-
-
-    /*
-    Presentation Layer Logic
-     */
-
     @Override
-    public void initialize(URL location, ResourceBundle resources)  {
+    public void initialize(URL location, ResourceBundle resources) {
+
+        System.out.println("test");
 
         try {
-            _personDTOList = _memberHandler.getAllMember();
+            _availableRolesList = _memberHandler.getAllRoles();
         } catch (RemoteException e) {
             e.printStackTrace();
         } catch (NotBoundException e) {
@@ -90,43 +110,65 @@ public class ViewControllerEditMember extends  SceneController  implements Initi
             e.printStackTrace();
         }
 
-        _personDTOObservableListList = FXCollections.observableList(_personDTOList);
 
-        _membersTableView.setItems(_personDTOObservableListList);
 
-        FilteredList<PersonDTO> filteredData = new FilteredList<>(_personDTOObservableListList, p -> true);
+        _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
 
-        _filterField.textProperty().addListener((observable, oldValue, newValue) -> {
-            filteredData.setPredicate(person -> {
-                // If filter text is empty, display all persons.
-                if (newValue == null || newValue.isEmpty()) {
-                    return true;
-                }
+        _attachedRolesObservableList = FXCollections.observableList(_attachedRolesList);
 
-                // Compare first name and last name of every person with filter text.
-                String lowerCaseFilter = newValue.toLowerCase();
+        _availableRoles.setItems(_availableRolesObservableList);
 
-                if (person.getFirstName() != null && person.getFirstName().toLowerCase().contains(lowerCaseFilter)) {
-                    return true; // Filter matches first name.
-                } else if (person.getLastName() != null && person.getLastName().toLowerCase().contains(lowerCaseFilter)) {
-                    return true; // Filter matches last name.
-                } else if (person.getSocialSecurityNumber() != null && person.getSocialSecurityNumber().toLowerCase().contains(lowerCaseFilter)) {
-                    return true; // Filter matches last name.
-                } else if (person.getUserId() != null && person.getUserId().toLowerCase().contains(lowerCaseFilter)) {
-                    return true; // Filter matches last name.
-                }
-                return false; // Does not match.
-            });
-        });
+        _attachedRoles.setItems(_attachedRolesObservableList);
 
-        SortedList<PersonDTO> sortedData = new SortedList<>(filteredData);
 
-        sortedData.comparatorProperty().bind(_membersTableView.comparatorProperty());
-
-        _membersTableView.setItems(sortedData);
 
     }
 
+
+
+
+    /*
+    Presentation Layer Logic
+     */
+
+    @FXML
+    public void addRole() {
+        if(_availableRolesList.remove(_availableRoles.getSelectionModel().getSelectedItem())) {
+            _attachedRolesList.add(_availableRoles.getSelectionModel().getSelectedItem());
+        }
+        _availableRoles.refresh();
+        _attachedRoles.refresh();
+    }
+
+    @FXML
+    public void deleteRole() {
+        if(_attachedRolesList.remove(_attachedRoles.getSelectionModel().getSelectedItem())) {
+            _availableRolesList.add(_attachedRoles.getSelectionModel().getSelectedItem());
+        }
+        _availableRoles.refresh();
+        _attachedRoles.refresh();
+    }
+
+
+    @FXML
+    public void addNewMember() throws RemoteException, NotBoundException, MalformedURLException {
+
+        PersonDTO person = new PersonDTO();
+        person.setFirstName(firstName.getText());
+        person.setLastName(lastName.getText());
+        person.setDateOfBirth(toDate(birthday));
+        person.setSocialSecurityNumber(ssn.getText());
+        person.setRoleDTOList(_attachedRolesList);
+        _memberHandler.addNewMember(person);
+        System.out.println("test");
+
+
+    }
+
+    //Date Converter
+    private Date toDate(DatePicker datePicker){
+        return UtilDate.convertToSQLDate(datePicker.getValue());
+    }
 
 
 }

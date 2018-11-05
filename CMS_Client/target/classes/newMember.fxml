@@ -6,7 +6,10 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -87,7 +90,7 @@
          </image>
       </ImageView>
       <Separator layoutX="145.0" layoutY="170.0" orientation="VERTICAL" prefHeight="430.0" prefWidth="40.0" />
-      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="285.0" onAction="#switchToEditMember" prefHeight="35.0" prefWidth="130.0" text="EDIT MEMBER" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="285.0" prefHeight="35.0" prefWidth="130.0" text="EDIT MEMBER" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -136,12 +139,32 @@
       <TextField fx:id="lastName" layoutX="290.0" layoutY="255.0" />
       <DatePicker fx:id="birthday" layoutX="290.0" layoutY="296.0" prefHeight="25.0" prefWidth="149.0" />
       <TextField fx:id="ssn" layoutX="290.0" layoutY="336.0" />
-      <Button fx:id="addMember" defaultButton="true" layoutX="800.0" layoutY="520.0" mnemonicParsing="false" onAction="#addNewMember" prefHeight="39.0" prefWidth="150.0" text="ADD MEMBER">
+      <Button fx:id="addMember" defaultButton="true" layoutX="827.0" layoutY="520.0" mnemonicParsing="false" onAction="#addNewMember" prefHeight="39.0" prefWidth="150.0" text="ADD MEMBER">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Label layoutX="189.0" layoutY="389.0" text="Roles" />
+      <Label layoutX="213.0" layoutY="447.0" text="Roles" />
+      <TableView fx:id="_attachedRoles" layoutX="289.0" layoutY="389.0" prefHeight="192.0" prefWidth="224.0">
+        <columns>
+          <TableColumn prefWidth="223.0" text="Attached Roles">
+             <cellValueFactory>
+                <PropertyValueFactory property="roleName" />
+             </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <TableView fx:id="_availableRoles" layoutX="595.0" layoutY="389.0" prefHeight="192.0" prefWidth="224.0">
+         <columns>
+            <TableColumn prefWidth="223.0" text="Available Roles">
+               <cellValueFactory>
+                  <PropertyValueFactory property="roleName" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Button fx:id="_addRoleButton" layoutX="522.0" layoutY="432.0" mnemonicParsing="false" onAction="#addRole" prefHeight="39.0" prefWidth="66.0" text="&lt;&lt;&lt;" />
+      <Button fx:id="_deleteRoleButton" layoutX="522.0" layoutY="529.0" mnemonicParsing="false" onAction="#deleteRole" prefHeight="39.0" prefWidth="66.0" text="&gt;&gt;&gt;" />
    </children>
    <effect>
       <DropShadow />
