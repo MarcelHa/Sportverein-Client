@@ -90,6 +90,18 @@ public class ViewControllerEditMember extends SceneController implements Initial
             e.printStackTrace();
         }
 
+        PersonDTO personDTO = null;
+
+        for (RoleDTO roleDTO:_availableRolesList) {
+            if (personDTO.getRoleDTOList().contains(roleDTO)) {
+                _availableRolesList.remove(roleDTO);
+            }
+        }
+
+
+
+
+
         _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
 
         _attachedRolesObservableList = FXCollections.observableList(_attachedRolesList);
@@ -121,15 +133,13 @@ public class ViewControllerEditMember extends SceneController implements Initial
 
     @FXML
     public void addNewMember() throws RemoteException, NotBoundException, MalformedURLException {
-
         PersonDTO person = new PersonDTO();
         person.setFirstName(firstName.getText());
         person.setLastName(lastName.getText());
         person.setDateOfBirth(toDate(birthday));
         person.setSocialSecurityNumber(ssn.getText());
         person.setRoleDTOList(_attachedRolesList);
-
-        _memberHandler.addNewMember(person);
+        _memberHandler.updateMember(person);
     }
 
     //Date Converter
