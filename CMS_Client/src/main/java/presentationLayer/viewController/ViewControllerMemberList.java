@@ -127,8 +127,8 @@ public class ViewControllerMemberList extends  SceneController  implements Initi
 
 
     @FXML
-    public void editMember() {
-
+    public void editMember() throws RemoteException, NotBoundException, MalformedURLException {
+     
     }
 
     @FXML
