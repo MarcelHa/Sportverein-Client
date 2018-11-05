@@ -16,7 +16,5 @@ public class SceneController {
         Scene site = new Scene(root);
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.setScene(site);
-
-
     }
 }
