@@ -126,6 +126,7 @@ public class ViewControllerNewMember extends SceneController implements Initiali
         person.setDateOfBirth(toDate(birthday));
         person.setSocialSecurityNumber(ssn.getText());
         person.setRoleDTOList(_attachedRolesList);
+
         _memberHandler.addNewMember(person);
 
 

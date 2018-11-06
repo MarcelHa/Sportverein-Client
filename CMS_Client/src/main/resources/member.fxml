@@ -16,7 +16,7 @@
       <Pane prefHeight="170.0" prefWidth="1000.0" style="-fx-background-color: #44bba4;">
          <children>
             <JFXTextField focusColor="WHITE" layoutX="738.0" layoutY="48.0" prefHeight="25.0" prefWidth="220.0" promptText="Search" unFocusColor="WHITE" />
-            <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="27.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="27.0" layoutY="50.0" onMouseClicked="#switchToHome" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@images/home.png" />
                </image>

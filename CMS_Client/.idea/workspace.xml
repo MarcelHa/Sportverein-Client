@@ -3,20 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="86db7dde-e0c0-4893-900c-b35ae8602985" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presentationLayer/CareTaker.java" afterPath="$PROJECT_DIR$/src/main/java/presentationLayer/CareTaker.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java" afterPath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerMemberList.java" afterPath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerMemberList.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmi/dto/CompetitionDTO.java" afterPath="$PROJECT_DIR$/src/main/java/rmi/dto/CompetitionDTO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmi/dto/LeagueDTO.java" afterPath="$PROJECT_DIR$/src/main/java/rmi/dto/LeagueDTO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmi/dto/PersonDTO.java" afterPath="$PROJECT_DIR$/src/main/java/rmi/dto/PersonDTO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmi/dto/RoleDTO.java" afterPath="$PROJECT_DIR$/src/main/java/rmi/dto/RoleDTO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmi/dto/SportDTO.java" afterPath="$PROJECT_DIR$/src/main/java/rmi/dto/SportDTO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmi/dto/TeamDTO.java" afterPath="$PROJECT_DIR$/src/main/java/rmi/dto/TeamDTO.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MainClass.class" afterPath="$PROJECT_DIR$/target/classes/MainClass.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/applicationLayer/MemberHandler.class" afterPath="$PROJECT_DIR$/target/classes/applicationLayer/MemberHandler.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/presentationLayer/viewController/NavigationController.class" afterPath="$PROJECT_DIR$/target/classes/presentationLayer/viewController/NavigationController.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/presentationLayer/viewController/ViewControllerEditMember.class" afterPath="$PROJECT_DIR$/target/classes/presentationLayer/viewController/ViewControllerEditMember.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/presentationLayer/viewController/ViewControllerNewMember.class" afterPath="$PROJECT_DIR$/target/classes/presentationLayer/viewController/ViewControllerNewMember.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utilities/UtilDate.class" afterPath="$PROJECT_DIR$/target/classes/utilities/UtilDate.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java" afterPath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/editEvent.fxml" afterPath="$PROJECT_DIR$/src/main/resources/editEvent.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/editMember.fxml" afterPath="$PROJECT_DIR$/src/main/resources/editMember.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/event.fxml" afterPath="$PROJECT_DIR$/src/main/resources/event.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/home.fxml" afterPath="$PROJECT_DIR$/src/main/resources/home.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/member.fxml" afterPath="$PROJECT_DIR$/src/main/resources/member.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/memberList.fxml" afterPath="$PROJECT_DIR$/src/main/resources/memberList.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/newEvent.fxml" afterPath="$PROJECT_DIR$/src/main/resources/newEvent.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/newMember.fxml" afterPath="$PROJECT_DIR$/src/main/resources/newMember.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/result.fxml" afterPath="$PROJECT_DIR$/src/main/resources/result.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -81,28 +79,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PersonDTO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/PersonDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TeamDTO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/TeamDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -119,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ui/viewController/viewControllerNewMember.java" />
         <option value="$PROJECT_DIR$/src/main/java/ui/viewController/ViewControllerNewMember.java" />
         <option value="$PROJECT_DIR$/src/main/java/presentatinLayer/viewController/ViewControllerNewMember.java" />
         <option value="$PROJECT_DIR$/src/main/java/ViewControllerNewMember.java" />
@@ -150,18 +126,12 @@
         <option value="$PROJECT_DIR$/src/main/java/applicationLayer/dto/PersonDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/interfaces/RoleRemotable.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/interfaces/MemberRemotable.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/memberList.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/member.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/editMember.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/interfaces/FactoryRemotable.java" />
         <option value="$PROJECT_DIR$/src/main/java/utilities/UtilDate.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/applicationLayer/MemberHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/NavigationController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/newMember.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java" />
         <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerMemberList.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/RMIClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/dto/CompetitionDTO.java" />
@@ -170,6 +140,13 @@
         <option value="$PROJECT_DIR$/src/main/java/rmi/dto/TeamDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/dto/LeagueDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/dto/PersonDTO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/newMember.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/memberList.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/member.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/editMember.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/presentationLayer/CareTaker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java" />
       </list>
     </option>
   </component>
@@ -220,7 +197,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -261,48 +239,28 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="presentationLayer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMS_Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS_Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rmi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMS_Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS_Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rmi" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMS_Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS_Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="rmi" type="462c0819:PsiDirectoryNode" />
-              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CMS_Client" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CMS_Client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="utilities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMS_Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMS_Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CMS_Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CMS_Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,12 +272,8 @@
     <property name="settings.editor.selected.configurable" value="vcs.CVS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\java\rmi" />
-      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\java" />
-      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\resources\images" />
-      <recent name="C:\Users\Workplace\Desktop\Projekt_WS2018\CMS_Client\src\main\resources\images" />
-      <recent name="C:\Users\Workplace\Desktop\Projekt_WS2018\CMS_Client\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="applicationLayer" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -334,8 +288,12 @@
       <recent name="rmi.interfaces" />
       <recent name="rmi.dto" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="applicationLayer" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\resources\images" />
+      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\java\rmi" />
+      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\java" />
+      <recent name="C:\Users\Workplace\Desktop\Projekt_WS2018\CMS_Client\src\main\resources\images" />
+      <recent name="C:\Users\Workplace\Desktop\Projekt_WS2018\CMS_Client\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -499,34 +457,33 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108188000" />
+    <option name="totallyTimeSpent" value="111547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32635984" sideWeight="0.49485862" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32669982" sideWeight="0.49485862" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43096235" sideWeight="0.5051414" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955465" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2917342" sideWeight="0.49485862" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2917342" sideWeight="0.49485862" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19417475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27508092" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12818792" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24939272" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39812332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -544,19 +501,19 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39812332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32669982" sideWeight="0.49485862" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928804" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45771143" sideWeight="0.49485862" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45771143" sideWeight="0.49485862" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49068826" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -598,30 +555,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="35" lean-forward="false" selection-start-line="0" selection-start-column="35" selection-end-line="0" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/NewMemberHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/interfaces/IMember.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/MemberController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/interfaces/Iperson.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/interfaces/RMIRemotable.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/utilities/Stuber.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/interfaces/Remotable.java" />
     <entry file="file://$PROJECT_DIR$/Projekt_WS2018.iml" />
@@ -646,13 +584,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/interfaces/MemberRemotable.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/security/AccessControlContext.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/EventRemotable.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/client.policy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/RoleRemotable.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/IPersonDTO.java" />
@@ -660,24 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="13" column="65" lean-forward="false" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/SceneController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/CareTaker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -696,23 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/MemberHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#addNewMember#0;class#MemberHandler#0" expanded="false" />
-            <element signature="method#getAllMember#0;class#MemberHandler#0" expanded="false" />
-            <element signature="method#deleteMember#0;class#MemberHandler#0" expanded="false" />
-            <element signature="method#updateMember#0;class#MemberHandler#0" expanded="false" />
-            <element signature="method#addRolesToPersonDTO#0;class#MemberHandler#0" expanded="false" />
-            <element signature="method#getRolesFromPersonDto#0;class#MemberHandler#0" expanded="false" />
-            <element signature="method#getAllRoles#0;class#MemberHandler#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utilities/UtilDate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -725,9 +621,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/NavigationController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/CompetitionDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/RoleDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/SportDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/TeamDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/LeagueDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/PersonDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/NavigationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
           <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
           <folding>
             <element signature="method#switchToMember#0;class#NavigationController#0" expanded="false" />
@@ -746,10 +692,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-735">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="336">
+          <caret line="128" column="8" lean-forward="false" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="method#initialize#0;class#ViewControllerNewMember#0" expanded="false" />
             <element signature="method#switchToMember#0;class#ViewControllerNewMember#0" expanded="false" />
             <element signature="method#switchToClub#0;class#ViewControllerNewMember#0" expanded="false" />
             <element signature="method#switchToEvent#0;class#ViewControllerNewMember#0" expanded="false" />
@@ -757,25 +704,98 @@
             <element signature="method#switchToResult#0;class#ViewControllerNewMember#0" expanded="false" />
             <element signature="method#switchToEditMember#0;class#ViewControllerNewMember#0" expanded="false" />
             <element signature="method#switchToMemberList#0;class#ViewControllerNewMember#0" expanded="false" />
-            <element signature="method#initialize#0;class#ViewControllerNewMember#0" expanded="false" />
             <element signature="method#addRole#0;class#ViewControllerNewMember#0" expanded="false" />
             <element signature="method#deleteRole#0;class#ViewControllerNewMember#0" expanded="false" />
-            <element signature="method#addNewMember#0;class#ViewControllerNewMember#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/editEvent.fxml">
-      <provider editor-type-id="text-editor">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/result.fxml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/newMember.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="115" lean-forward="false" selection-start-line="19" selection-start-column="115" selection-end-line="19" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/newEvent.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/home.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/editEvent.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/club.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/client.policy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/memberList.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="18" column="115" lean-forward="false" selection-start-line="18" selection-start-column="115" selection-end-line="18" selection-end-column="115" />
+          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/editMember.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/event.fxml">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -786,10 +806,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/newMember.fxml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/member.fxml">
       <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="273">
+          <caret line="13" column="81" lean-forward="false" selection-start-line="13" selection-start-column="81" selection-end-line="13" selection-end-column="81" />
           <folding />
         </state>
       </provider>
@@ -799,8 +819,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rmi/RMIClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state relative-caret-position="74">
+          <caret line="16" column="44" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="44" />
           <folding>
             <element signature="method#setMemberRemotable#0;class#RMIClient#0" expanded="false" />
             <element signature="method#setCompetitionRemotable#0;class#RMIClient#0" expanded="false" />
@@ -808,18 +828,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/SceneController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="145">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerMemberList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1613">
-          <caret line="129" column="8" lean-forward="false" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="8" />
+        <state relative-caret-position="124">
+          <caret line="129" column="8" lean-forward="true" selection-start-line="129" selection-start-column="8" selection-end-line="129" selection-end-column="36" />
           <folding>
             <element signature="method#switchToMember#0;class#ViewControllerMemberList#0" expanded="false" />
             <element signature="method#switchToClub#0;class#ViewControllerMemberList#0" expanded="false" />
@@ -828,67 +848,61 @@
             <element signature="method#switchToResult#0;class#ViewControllerMemberList#0" expanded="false" />
             <element signature="method#switchToNewMember#0;class#ViewControllerMemberList#0" expanded="false" />
             <element signature="method#deleteMember#0;class#ViewControllerMemberList#0" expanded="false" />
+            <element signature="method#editMember#0;class#ViewControllerMemberList#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/MemberHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="method#addNewMember#0;class#MemberHandler#0" expanded="false" />
+            <element signature="method#getAllMember#0;class#MemberHandler#0" expanded="false" />
+            <element signature="method#deleteMember#0;class#MemberHandler#0" expanded="false" />
+            <element signature="method#addRolesToPersonDTO#0;class#MemberHandler#0" expanded="false" />
+            <element signature="method#getRolesFromPersonDto#0;class#MemberHandler#0" expanded="false" />
+            <element signature="method#getAllRoles#0;class#MemberHandler#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/editMember.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="19" column="115" lean-forward="true" selection-start-line="19" selection-start-column="115" selection-end-line="19" selection-end-column="115" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/CareTaker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="8" column="66" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="66" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1503">
-          <caret line="66" column="48" lean-forward="false" selection-start-line="66" selection-start-column="48" selection-end-line="66" selection-end-column="48" />
+        <state relative-caret-position="158">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding>
-            <element signature="e#1342#1351#0" expanded="true" />
-            <element signature="e#5056#5057#0" expanded="true" />
-            <element signature="e#5127#5128#0" expanded="true" />
+            <element signature="method#switchToMember#0;class#ViewControllerEditMember#0" expanded="false" />
+            <element signature="method#switchToNewMember#0;class#ViewControllerEditMember#0" expanded="false" />
+            <element signature="method#switchToClub#0;class#ViewControllerEditMember#0" expanded="false" />
+            <element signature="method#switchToEvent#0;class#ViewControllerEditMember#0" expanded="false" />
+            <element signature="method#switchToHome#0;class#ViewControllerEditMember#0" expanded="false" />
+            <element signature="method#switchToResult#0;class#ViewControllerEditMember#0" expanded="false" />
+            <element signature="method#switchToMemberList#0;class#ViewControllerEditMember#0" expanded="false" />
+            <element signature="method#addRole#0;class#ViewControllerEditMember#0" expanded="false" />
+            <element signature="method#deleteRole#0;class#ViewControllerEditMember#0" expanded="false" />
+            <element signature="method#initTextField#0;class#ViewControllerEditMember#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/CompetitionDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/RoleDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/SportDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/TeamDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/LeagueDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/PersonDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

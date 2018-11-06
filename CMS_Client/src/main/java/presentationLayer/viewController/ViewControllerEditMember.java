@@ -48,9 +48,8 @@ public class ViewControllerEditMember extends SceneController implements Initial
         try {
             _availableRolesList = _memberHandler.getAllRoles();
 
-            PersonDTO mementoDTO = CareTaker.getFirst();
+            PersonDTO mementoDTO = CareTaker.getMemento();
             initTextField(mementoDTO);
-            CareTaker.clear();
 
             mementoDTO.setRoleDTOList(_memberHandler.getRolesFromPersonDto(mementoDTO));
 
@@ -59,7 +58,6 @@ public class ViewControllerEditMember extends SceneController implements Initial
             if (_attachedRolesList == null) {
                 _attachedRolesList = new LinkedList<>();
             }
-
 
         for (RoleDTO roleDTO:_availableRolesList) {
             if (mementoDTO.getRoleDTOList() != null && mementoDTO.getRoleDTOList().contains(roleDTO)) {
@@ -139,6 +137,7 @@ public class ViewControllerEditMember extends SceneController implements Initial
         person.setDateOfBirth(toDate(birthday));
         person.setSocialSecurityNumber(ssn.getText());
         person.setRoleDTOList(_attachedRolesList);
+
         _memberHandler.updateMember(person);
     }
 
@@ -147,12 +146,13 @@ public class ViewControllerEditMember extends SceneController implements Initial
         return UtilDate.convertToSQLDate(datePicker.getValue());
     }
 
+    /*
+    Refills the empty text areas with memento
+     */
     private void initTextField(PersonDTO mementoDTO){
         firstName.setText(mementoDTO.getFirstName());
         lastName.setText(mementoDTO.getLastName());
-        //TODO
         birthday.setValue(UtilDate.convertToLocalDate(mementoDTO.getDateOfBirth()));
-        //birthday.set(mementoDTO.getFirstName());
         ssn.setText(mementoDTO.getSocialSecurityNumber());
     }
 }
