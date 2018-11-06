@@ -163,6 +163,7 @@ public class ViewControllerEditMember extends SceneController implements Initial
         firstName.setText(mementoDTO.getFirstName());
         lastName.setText(mementoDTO.getLastName());
         //TODO
+        birthday.setValue(UtilDate.convertToLocalDate(mementoDTO.getDateOfBirth()));
         //birthday.set(mementoDTO.getFirstName());
         ssn.setText(mementoDTO.getSocialSecurityNumber());
     }
