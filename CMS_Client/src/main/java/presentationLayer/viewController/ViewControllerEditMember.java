@@ -15,12 +15,15 @@ import presentationLayer.SceneController;
 import rmi.dto.PersonDTO;
 import rmi.dto.RoleDTO;
 import utilities.UtilDate;
+
+import javax.management.relation.Role;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.sql.Date;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -48,9 +51,7 @@ public class ViewControllerEditMember extends SceneController implements Initial
     public void initialize(URL location, ResourceBundle resources) {
         try {
             _availableRolesList = _memberHandler.getAllRoles();
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        } catch (NotBoundException e) {
+        } catch (RemoteException | NotBoundException e) {
             e.printStackTrace();
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -70,8 +71,15 @@ public class ViewControllerEditMember extends SceneController implements Initial
             e.printStackTrace();
         }
 
-
         _attachedRolesList = mementoDTO.getRoleDTOList();
+
+        for (RoleDTO role:_attachedRolesList) {
+            _availableRolesList.remove(role);
+        }
+
+        _availableRoles.refresh();
+        _attachedRoles.refresh();
+
 
         for (RoleDTO roleDTO:_availableRolesList) {
             for (RoleDTO roleDTOMemento:mementoDTO.getRoleDTOList()) {
@@ -171,3 +179,8 @@ public class ViewControllerEditMember extends SceneController implements Initial
     }
 
 }
+
+
+
+
+
