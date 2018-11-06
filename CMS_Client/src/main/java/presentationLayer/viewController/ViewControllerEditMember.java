@@ -67,17 +67,10 @@ public class ViewControllerEditMember extends SceneController implements Initial
                 }
 =======
         for (RoleDTO roleDTO:_availableRolesList) {
-<<<<<<< HEAD
             if (mementoDTO.getRoleDTOList() != null && mementoDTO.getRoleDTOList().contains(roleDTO)) {
                 _availableRolesList.remove(roleDTO);
                 _attachedRolesList.add(roleDTO);
 >>>>>>> ce8545f3a8243230f1817cf494be322c8817e581
-=======
-            for (RoleDTO roleDTOMemento:mementoDTO.getRoleDTOList()) {
-                if (roleDTOMemento.getRoleId() == roleDTO.getRoleId()) {
-                    _availableRolesList.remove(roleDTO);
-                }
->>>>>>> Marcel_addstuff
             }
 
             _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
