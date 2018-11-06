@@ -81,7 +81,6 @@ public class ViewControllerEditMember extends SceneController implements Initial
             }
         }
 
-        
         if (_attachedRolesList == null) {
             _attachedRolesList = new LinkedList<RoleDTO>();
         }
