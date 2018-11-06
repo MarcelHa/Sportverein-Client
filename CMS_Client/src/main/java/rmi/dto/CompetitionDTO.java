@@ -5,7 +5,8 @@ import java.sql.Date;
 import java.util.List;
 
 public class CompetitionDTO implements Serializable {
-    private static final long serialVersionUID = 654122888;
+
+    private static final long serialVersionUID = 65412L;
     private int _compId;
 
     public String getCompName() {

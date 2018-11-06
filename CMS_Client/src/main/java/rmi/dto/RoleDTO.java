@@ -12,15 +12,12 @@ public class RoleDTO implements Serializable {
     public int getRoleId() {
         return _roleId;
     }
-
     public void setRoleId(int roleId) {
         _roleId = roleId;
     }
-
     public String getRoleName() {
         return _roleName;
     }
-
     public void setRoleName(String roleName) {
         _roleName = roleName;
     }

@@ -8,7 +8,6 @@ public class SportDTO implements Serializable {
 
     private int _sportId;
     private String _sportName;
-    private int _deptId;
 
 
     public String getSportName() {

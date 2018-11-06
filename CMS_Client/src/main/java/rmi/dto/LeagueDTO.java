@@ -13,15 +13,12 @@ public class LeagueDTO implements Serializable {
     public String getLeagueName() {
         return _leagueName;
     }
-
     public void setLeagueName(String leagueName) {
         _leagueName = leagueName;
     }
-
     public int getLeagueID() {
         return _leagueID;
     }
-
     public void setLeagueID(int leagueID) {
         _leagueID = leagueID;
     }

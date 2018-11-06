@@ -131,7 +131,6 @@ public class ViewControllerMemberList extends SceneController implements Initial
         super.switchScene(actionEvent, "editMember.fxml");
     }
 
-    @FXML
     private PersonDTO editMember() throws RemoteException, NotBoundException, MalformedURLException {
         return _membersTableView.getSelectionModel().getSelectedItem();
     }
