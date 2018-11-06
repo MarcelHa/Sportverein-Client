@@ -27,21 +27,35 @@ public class ViewControllerNewMember extends SceneController implements Initiali
     private DatePicker birthday;
     @FXML
     private TableView<RoleDTO> _availableRoles;
-
     @FXML
     private TableView<RoleDTO> _attachedRoles;
 
     private List<RoleDTO> _availableRolesList;
-
     private ObservableList<RoleDTO> _availableRolesObservableList;
-
     private ObservableList<RoleDTO> _attachedRolesObservableList;
-
     private List<RoleDTO> _attachedRolesList = new LinkedList<RoleDTO>();
-
-
     private MemberHandler _memberHandler = new MemberHandler();
 
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        try {
+            _availableRolesList = _memberHandler.getAllRoles();
+        } catch (RemoteException e) {
+            e.printStackTrace();
+        } catch (NotBoundException e) {
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+        _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
+
+        _attachedRolesObservableList = FXCollections.observableList(_attachedRolesList);
+
+        _availableRoles.setItems(_availableRolesObservableList);
+
+        _attachedRoles.setItems(_attachedRolesObservableList);
+    }
 
     /*
     Simple Dashboard Navigation
@@ -79,27 +93,6 @@ public class ViewControllerNewMember extends SceneController implements Initiali
     @FXML
     public void switchToMemberList(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "memberList.fxml");
-    }
-
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        try {
-            _availableRolesList = _memberHandler.getAllRoles();
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        } catch (NotBoundException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-        _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
-
-        _attachedRolesObservableList = FXCollections.observableList(_attachedRolesList);
-
-        _availableRoles.setItems(_availableRolesObservableList);
-
-        _attachedRoles.setItems(_attachedRolesObservableList);
     }
 
     /*
