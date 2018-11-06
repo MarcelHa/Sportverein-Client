@@ -17,7 +17,8 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.viewController.ViewControllerNewMember">
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="presentationLayer.viewController.ViewControllerNewMember">
    <children>
       <Pane prefHeight="170.0" prefWidth="1000.0" style="-fx-background-color: #44bba4;">
          <children>
@@ -149,6 +150,9 @@
             <Font name="System Bold" size="12.0" />
          </font></Label>
       <TableView fx:id="_attachedRoles" layoutX="185.0" layoutY="432.0" prefHeight="120.0" prefWidth="225.0">
+          <placeholder>
+              <Label text="Choose prefered role(s)"/>
+          </placeholder>
         <columns>
           <TableColumn prefWidth="223.0" text="Attached Roles">
              <cellValueFactory>
@@ -158,6 +162,9 @@
         </columns>
       </TableView>
       <TableView fx:id="_availableRoles" layoutX="490.0" layoutY="432.0" prefHeight="120.0" prefWidth="225.0">
+          <placeholder>
+              <Label text="No additional roles available"/>
+          </placeholder>
          <columns>
             <TableColumn prefWidth="223.0" text="Available Roles">
                <cellValueFactory>
