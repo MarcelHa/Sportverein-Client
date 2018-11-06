@@ -74,9 +74,10 @@ public class ViewControllerEditMember extends SceneController implements Initial
         _attachedRolesList = mementoDTO.getRoleDTOList();
 
         for (RoleDTO roleDTO:_availableRolesList) {
-            if (mementoDTO.getRoleDTOList() != null && mementoDTO.getRoleDTOList().contains(roleDTO)) {
-                _availableRolesList.remove(roleDTO);
-                _attachedRolesList.add(roleDTO);
+            for (RoleDTO roleDTOMemento:mementoDTO.getRoleDTOList()) {
+                if (roleDTOMemento.getRoleId() == roleDTO.getRoleId()) {
+                    _availableRolesList.remove(roleDTO);
+                }
             }
         }
 
