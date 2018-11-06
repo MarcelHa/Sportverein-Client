@@ -6,6 +6,7 @@ import java.util.Date;
 
 public class UtilDate{
 
+
     public static Date convertToDate(LocalDate localDate) {
         return Date.from(localDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
     }

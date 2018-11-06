@@ -6,7 +6,6 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
@@ -24,7 +23,6 @@ import java.sql.Date;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ResourceBundle;
-
 
 public class ViewControllerEditMember extends SceneController implements Initializable {
 
@@ -46,47 +44,36 @@ public class ViewControllerEditMember extends SceneController implements Initial
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
         try {
             _availableRolesList = _memberHandler.getAllRoles();
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        } catch (NotBoundException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
 
-        PersonDTO mementoDTO = CareTaker.getFirst();
-        initTextField(mementoDTO);
-        CareTaker.clear();
+            PersonDTO mementoDTO = CareTaker.getFirst();
+            initTextField(mementoDTO);
+            CareTaker.clear();
 
-        try {
             mementoDTO.setRoleDTOList(_memberHandler.getRolesFromPersonDto(mementoDTO));
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        } catch (NotBoundException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
 
+            _attachedRolesList = mementoDTO.getRoleDTOList();
 
-        _attachedRolesList = mementoDTO.getRoleDTOList();
-
-        for (RoleDTO roleDTO:_availableRolesList) {
-            if (mementoDTO.getRoleDTOList() != null && mementoDTO.getRoleDTOList().contains(roleDTO)) {
-                _availableRolesList.remove(roleDTO);
+            if (_attachedRolesList == null) {
+                _attachedRolesList = new LinkedList<>();
             }
-        }
 
-        if (_attachedRolesList == null) {
-            _attachedRolesList = new LinkedList<RoleDTO>();
-        }
+            for (RoleDTO roleDTO:_availableRolesList) {
+                if (mementoDTO.getRoleDTOList() != null && mementoDTO.getRoleDTOList().contains(roleDTO)) {
+                    _availableRolesList.remove(roleDTO);
+                }
+            }
 
-        _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
-        _attachedRolesObservableList = FXCollections.observableList(_attachedRolesList);
-        _availableRoles.setItems(_availableRolesObservableList);
-        _attachedRoles.setItems(_attachedRolesObservableList);
+            _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
+            _attachedRolesObservableList = FXCollections.observableList(_attachedRolesList);
+            _availableRoles.setItems(_availableRolesObservableList);
+            _attachedRoles.setItems(_attachedRolesObservableList);
+
+        } catch (RemoteException | MalformedURLException | NotBoundException e) {
+            e.printStackTrace();
+        }
     }
 
 

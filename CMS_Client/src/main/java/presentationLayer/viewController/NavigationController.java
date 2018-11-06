@@ -8,7 +8,6 @@ import java.io.IOException;
 
 public class NavigationController extends SceneController {
 
-
     @FXML
     public void switchToMember(ActionEvent actionEvent) throws IOException{
         super.switchScene(actionEvent, "member.fxml");
@@ -37,7 +36,6 @@ public class NavigationController extends SceneController {
     public void switchToEditMember(ActionEvent actionEvent) throws IOException{
         super.switchScene(actionEvent, "editMember.fxml");
     }
-
     @FXML
     public void switchToNewEvent(ActionEvent actionEvent) throws IOException{
         super.switchScene(actionEvent, "newEvent.fxml");
@@ -50,5 +48,4 @@ public class NavigationController extends SceneController {
     public void switchToMemberList(ActionEvent actionEvent) throws IOException{
         super.switchScene(actionEvent, "memberList.fxml");
     }
-
 }

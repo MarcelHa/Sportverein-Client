@@ -11,8 +11,6 @@ import javafx.fxml.FXML;
 import presentationLayer.SceneController;
 import rmi.dto.RoleDTO;
 import utilities.UtilDate;
-
-import javax.swing.*;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -21,22 +19,12 @@ import java.rmi.RemoteException;
 import java.sql.Date;
 import java.util.*;
 
-
 public class ViewControllerNewMember extends SceneController implements Initializable {
 
     @FXML
-    Button addMember;
+    private TextField firstName, lastName, ssn;
     @FXML
-    TextField firstName, lastName, ssn;
-    @FXML
-    DatePicker birthday;
-
-    @FXML
-    private Button _giveRole;
-
-    @FXML
-    private Button _deleteRole;
-
+    private DatePicker birthday;
     @FXML
     private TableView<RoleDTO> _availableRoles;
 

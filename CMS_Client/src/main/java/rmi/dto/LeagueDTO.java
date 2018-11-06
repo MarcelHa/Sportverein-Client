@@ -3,12 +3,11 @@ package rmi.dto;
 import java.io.Serializable;
 
 public class LeagueDTO implements Serializable {
-    private static final long serialVersionUID = 65486846;
+
+    private static final long serialVersionUID = 65486L;
+
     private int _leagueID;
-
     private String _leagueName;
-
-
 
 
     public String getLeagueName() {

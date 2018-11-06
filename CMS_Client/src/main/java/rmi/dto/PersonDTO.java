@@ -6,7 +6,8 @@ import java.util.List;
 
 public class PersonDTO implements Serializable {
 
-    private static final long serialVersionUID = 7181607601291344700L;
+    private static final long serialVersionUID = 12458L;
+
     private int personID;
     private String _firstName;
     private String _lastName;
@@ -15,20 +16,6 @@ public class PersonDTO implements Serializable {
     private String _socialSecurityNumber;
     private List<RoleDTO> _roleDTOList;
 
-
-//    public PersonDTO() {
-//
-//    }
-
-    /*
-    public PersonDTO(String firstName, String lastName, Date dateOfBirth, String userId, String socialSecurityNumber) {
-        _firstName = firstName;
-        _lastName = lastName;
-        _dateOfBirth = dateOfBirth;
-        _userId = userId;
-        _socialSecurityNumber = socialSecurityNumber;
-    }
-    */
 
     public String getFirstName() {
         return _firstName;

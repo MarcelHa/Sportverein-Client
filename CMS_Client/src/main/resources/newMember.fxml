@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.viewController.ViewControllerNewMember">
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentationLayer.viewController.ViewControllerNewMember">
    <children>
       <Pane prefHeight="170.0" prefWidth="1000.0" style="-fx-background-color: #44bba4;">
          <children>
@@ -90,7 +90,7 @@
          </image>
       </ImageView>
       <Separator layoutX="145.0" layoutY="170.0" orientation="VERTICAL" prefHeight="430.0" prefWidth="40.0" />
-      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="285.0" prefHeight="35.0" prefWidth="130.0" text="EDIT MEMBER" textFill="#44bba4">
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="285.0" prefHeight="35.0" prefWidth="130.0" text="MEMBERLIST" textFill="#44bba4">
          <font>
             <Font name="System Bold" size="13.0" />
          </font>
@@ -135,17 +135,20 @@
             <Font name="System Bold" size="12.0" />
          </font>
       </Label>
-      <TextField fx:id="firstName" layoutX="290.0" layoutY="218.0" />
+      <TextField fx:id="firstName" layoutX="290.0" layoutY="215.0" />
       <TextField fx:id="lastName" layoutX="290.0" layoutY="255.0" />
-      <DatePicker fx:id="birthday" layoutX="290.0" layoutY="296.0" prefHeight="25.0" prefWidth="149.0" />
-      <TextField fx:id="ssn" layoutX="290.0" layoutY="336.0" />
-      <Button fx:id="addMember" defaultButton="true" layoutX="827.0" layoutY="520.0" mnemonicParsing="false" onAction="#addNewMember" prefHeight="39.0" prefWidth="150.0" text="ADD MEMBER">
+      <DatePicker fx:id="birthday" layoutX="290.0" layoutY="295.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="ssn" layoutX="290.0" layoutY="335.0" />
+      <Button fx:id="addMember" defaultButton="true" layoutX="825.0" layoutY="515.0" mnemonicParsing="false" onAction="#addNewMember" prefHeight="39.0" prefWidth="150.0" text="ADD MEMBER">
          <font>
             <Font size="15.0" />
          </font>
       </Button>
-      <Label layoutX="213.0" layoutY="447.0" text="Roles" />
-      <TableView fx:id="_attachedRoles" layoutX="289.0" layoutY="389.0" prefHeight="192.0" prefWidth="224.0">
+      <Label layoutX="185.0" layoutY="390.0" text="Attach Roles">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TableView fx:id="_attachedRoles" layoutX="185.0" layoutY="432.0" prefHeight="120.0" prefWidth="225.0">
         <columns>
           <TableColumn prefWidth="223.0" text="Attached Roles">
              <cellValueFactory>
@@ -154,7 +157,7 @@
           </TableColumn>
         </columns>
       </TableView>
-      <TableView fx:id="_availableRoles" layoutX="595.0" layoutY="389.0" prefHeight="192.0" prefWidth="224.0">
+      <TableView fx:id="_availableRoles" layoutX="490.0" layoutY="432.0" prefHeight="120.0" prefWidth="225.0">
          <columns>
             <TableColumn prefWidth="223.0" text="Available Roles">
                <cellValueFactory>
@@ -163,8 +166,8 @@
             </TableColumn>
          </columns>
       </TableView>
-      <Button fx:id="_addRoleButton" layoutX="522.0" layoutY="432.0" mnemonicParsing="false" onAction="#addRole" prefHeight="39.0" prefWidth="66.0" text="&lt;&lt;&lt;" />
-      <Button fx:id="_deleteRoleButton" layoutX="522.0" layoutY="529.0" mnemonicParsing="false" onAction="#deleteRole" prefHeight="39.0" prefWidth="66.0" text="&gt;&gt;&gt;" />
+      <Button fx:id="_addRoleButton" layoutX="425.0" layoutY="445.0" mnemonicParsing="false" onAction="#addRole" prefHeight="30.0" prefWidth="50.0" text="&lt;&lt;&lt;" />
+      <Button fx:id="_deleteRoleButton" layoutX="425.0" layoutY="504.0" mnemonicParsing="false" onAction="#deleteRole" prefHeight="30.0" prefWidth="50.0" text="&gt;&gt;&gt;" />
    </children>
    <effect>
       <DropShadow />
