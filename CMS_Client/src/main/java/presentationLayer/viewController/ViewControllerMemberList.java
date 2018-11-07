@@ -127,18 +127,23 @@ public class ViewControllerMemberList extends  SceneController  implements Initi
 
     @FXML
     public void deleteMember(ActionEvent actionEvent) throws IOException, NotBoundException {
-        PersonDTO selectedPerson = _membersTableView.getSelectionModel().getSelectedItem();
-        String person = selectedPerson.getFirstName() + " " + selectedPerson.getLastName();
-        Optional<ButtonType> result = showWarningDialog("Deleting Member " + person
-                , "Are you sure you want to delete " + person + "?");
-        boolean wantOverbook = false;
-        if (result.get() == ButtonType.OK) {
-            if (_membersTableView.getSelectionModel().getSelectedItem() == null) {
-                StyleValidation.markRed(_membersTableView);
-            }
-            else {
-                super.switchScene(actionEvent, "member.fxml");
-                _memberHandler.deleteMember(_membersTableView.getSelectionModel().getSelectedItem());
+        if (_membersTableView.getSelectionModel().getSelectedItem() == null) {
+            StyleValidation.markRed(_membersTableView);
+        }
+        else {
+            PersonDTO selectedPerson = _membersTableView.getSelectionModel().getSelectedItem();
+            String person = selectedPerson.getFirstName() + " " + selectedPerson.getLastName();
+            Optional<ButtonType> result = showWarningDialog("Deleting Member " + person
+                    , "Are you sure you want to delete " + person + "?");
+            boolean wantOverbook = false;
+            if (result.get() == ButtonType.OK) {
+                if (_membersTableView.getSelectionModel().getSelectedItem() == null) {
+                    StyleValidation.markRed(_membersTableView);
+                }
+                else {
+                    super.switchScene(actionEvent, "member.fxml");
+                    _memberHandler.deleteMember(_membersTableView.getSelectionModel().getSelectedItem());
+                }
             }
         }
     }
