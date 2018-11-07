@@ -32,5 +32,7 @@ public interface CompetitionRemotable extends Remote {
 
     List<LeagueDTO> getAllLeagues() throws RemoteException;
 
+    List<SportDTO> getAllSports() throws RemoteException;
 
+    List<LeagueDTO> getAllLeagues() throws RemoteException;
 }
