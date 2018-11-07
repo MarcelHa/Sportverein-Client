@@ -44,13 +44,10 @@ public class ViewControllerNewMember extends SceneController implements Initiali
     public void initialize(URL location, ResourceBundle resources) {
         try {
             _availableRolesList = _memberHandler.getAllRoles();
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        } catch (NotBoundException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
+        } catch (RemoteException | NotBoundException | MalformedURLException e) {
             e.printStackTrace();
         }
+
         _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
 
         _attachedRolesObservableList = FXCollections.observableList(_attachedRolesList);

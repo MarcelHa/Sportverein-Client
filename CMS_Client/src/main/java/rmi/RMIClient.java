@@ -1,6 +1,5 @@
 package rmi;
 
-
 import rmi.interfaces.CompetitionRemotable;
 import rmi.interfaces.FactoryRemotable;
 import rmi.interfaces.MemberRemotable;
@@ -13,7 +12,7 @@ import java.rmi.RemoteException;
 
 public class RMIClient {
 
-    private static String serverIP = "172.22.8.115";
+    private static String serverIP = "172.22.10.245";
     private static RMIClient rmiClient;
 
 

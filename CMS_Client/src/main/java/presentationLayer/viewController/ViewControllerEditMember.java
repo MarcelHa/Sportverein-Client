@@ -12,7 +12,6 @@ import presentationLayer.SceneController;
 import rmi.dto.PersonDTO;
 import rmi.dto.RoleDTO;
 import utilities.UtilDate;
-
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -20,8 +19,6 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.sql.Date;
 import java.util.*;
-
-
 
 public class ViewControllerEditMember extends SceneController implements Initializable {
 
@@ -33,6 +30,8 @@ public class ViewControllerEditMember extends SceneController implements Initial
     private TableView<RoleDTO> _availableRoles;
     @FXML
     private TableView<RoleDTO> _attachedRoles;
+
+
     private PersonDTO _updatedPersonDTO = new PersonDTO();
     private List<RoleDTO> _availableRolesList;
     private ObservableList<RoleDTO> _availableRolesObservableList;

@@ -1,12 +1,14 @@
 package presentationLayer.viewController;
 
 import applicationLayer.CompetitionHandler;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import presentationLayer.SceneController;
 import rmi.dto.CompetitionDTO;
@@ -14,7 +16,10 @@ import rmi.dto.CompetitionDTO;
 import rmi.dto.TeamDTO;
 import utilities.UtilDate;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URL;
+import java.rmi.NotBoundException;
+import java.rmi.RemoteException;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -26,15 +31,23 @@ public class ViewControllerNewCompetition extends SceneController implements Ini
     private DatePicker date;
     @FXML
     private ChoiceBox sport, league;
+    @FXML
+    private TableView<TeamDTO> _availableTeams;
 
     private List<TeamDTO> _availableTeamList;
     private ObservableList<TeamDTO> _availableTeamsObservableList;
-    private ObservableList<TeamDTO> _attachedTeamsObservableList;
     private CompetitionHandler _competitionHandler = new CompetitionHandler();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        try{
+            _availableTeamList = _competitionHandler.getAllTeams();
+            _availableTeamsObservableList = FXCollections.observableList(_availableTeamList);
+            _availableTeams.setItems(_availableTeamsObservableList);
 
+        }catch (RemoteException | NotBoundException | MalformedURLException e){
+            e.printStackTrace();
+        }
 
     }
 
@@ -79,8 +92,9 @@ public class ViewControllerNewCompetition extends SceneController implements Ini
 
         competitionDTO.setCompName(compName.getText());
         competitionDTO.setLocation(location.getText());
-        competitionDTO.setTeamList(_attachedTeamsObservableList);
+        //competitionDTO.setTeamList(_attachedTeamsObservableList);
         competitionDTO.setStartDate(UtilDate.convertToSQLDate(date.getValue()));
-    }
 
+        //TODO add League and Sport
+    }
 }

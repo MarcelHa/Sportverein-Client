@@ -13,6 +13,15 @@ public class CompetitionDTO implements Serializable {
     private Date _startDate;
     private List<TeamDTO> _teamList;
     private SportDTO _sport;
+    private LeagueDTO _leagueDTO;
+
+
+    public CompetitionDTO() { }
+
+    public CompetitionDTO(String location, Date startDate) {
+        _location = location;
+        _startDate = startDate;
+    }
 
     public String getCompName() {
         return _compName;
@@ -28,13 +37,6 @@ public class CompetitionDTO implements Serializable {
 
     public void setTeamList(List<TeamDTO> teamList) {
         _teamList = teamList;
-    }
-
-    public CompetitionDTO() { }
-
-    public CompetitionDTO(String location, Date startDate) {
-        _location = location;
-        _startDate = startDate;
     }
 
     public String getLocation() { return  _location; }
@@ -57,10 +59,15 @@ public class CompetitionDTO implements Serializable {
         return _sport;
     }
 
-    public void setSport(SportDTO _sport) {
-        _sport = _sport;
+    public void setSport(SportDTO sport) {
+        _sport = sport;
     }
 
+    public LeagueDTO getLeagueDTO() {
+        return _leagueDTO;
+    }
 
-
+    public void setLeagueDTO(LeagueDTO leagueDTO) {
+        _leagueDTO = leagueDTO;
+    }
 }

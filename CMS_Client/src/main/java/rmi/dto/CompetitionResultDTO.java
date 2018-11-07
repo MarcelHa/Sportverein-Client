@@ -2,7 +2,7 @@ package rmi.dto;
 
 
 
-public class CompetitionResult {
+public class CompetitionResultDTO {
     private int _points;
     private CompetitionDTO _competitionDTO;
     private TeamDTO _teamDTO;
