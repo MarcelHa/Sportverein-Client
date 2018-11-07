@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86db7dde-e0c0-4893-900c-b35ae8602985" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/applicationLayer/CompetitionHandler.java" afterPath="$PROJECT_DIR$/src/main/java/applicationLayer/CompetitionHandler.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rmi/RMIClient.java" afterPath="$PROJECT_DIR$/src/main/java/rmi/RMIClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmi/dto/CompetitionDTO.java" afterPath="$PROJECT_DIR$/src/main/java/rmi/dto/CompetitionDTO.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java" afterPath="$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/event.fxml" afterPath="$PROJECT_DIR$/src/main/resources/event.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/newEvent.fxml" afterPath="$PROJECT_DIR$/src/main/resources/newEvent.fxml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/event.fxml" afterPath="$PROJECT_DIR$/target/classes/event.fxml" />
-      <change beforePath="$PROJECT_DIR$/target/classes/newEvent.fxml" afterPath="$PROJECT_DIR$/target/classes/newEvent.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/editMember.fxml" afterPath="$PROJECT_DIR$/src/main/resources/editMember.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -76,52 +69,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CompetitionRemotable.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
-              <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
+      <file leaf-file-name="editMember.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/editMember.fxml">
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RMIClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rmi/RMIClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+            <state relative-caret-position="157">
+              <caret line="150" column="74" lean-forward="false" selection-start-line="150" selection-start-column="74" selection-end-line="150" selection-end-column="74" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SceneController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/SceneController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ViewControllerNewCompetition.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewCompetition.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#switchToMember#0;class#ViewControllerNewCompetition#0" expanded="false" />
-                <element signature="method#switchToClub#0;class#ViewControllerNewCompetition#0" expanded="false" />
-                <element signature="method#switchToEvent#0;class#ViewControllerNewCompetition#0" expanded="false" />
-                <element signature="method#switchToEditEvent#0;class#ViewControllerNewCompetition#0" expanded="false" />
-                <element signature="method#switchToHome#0;class#ViewControllerNewCompetition#0" expanded="false" />
-                <element signature="method#switchToResult#0;class#ViewControllerNewCompetition#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -191,7 +147,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/newMember.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/memberList.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/member.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/editMember.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/presentationLayer/CareTaker.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/dto/RoleDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java" />
@@ -200,10 +155,11 @@
         <option value="$PROJECT_DIR$/src/main/java/rmi/dto/CompetitionDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/applicationLayer/CompetitionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/resources/event.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/rmi/RMIClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java" />
         <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewCompetition.java" />
         <option value="$PROJECT_DIR$/src/main/resources/newEvent.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/rmi/RMIClient.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/editMember.fxml" />
       </list>
     </option>
   </component>
@@ -231,7 +187,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="654" />
     <option name="height" value="767" />
@@ -527,10 +483,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118736000" />
+    <option name="totallyTimeSpent" value="119144000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="776" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="776" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -725,16 +681,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/editMember.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="19" column="115" lean-forward="true" selection-start-line="19" selection-start-column="115" selection-end-line="19" selection-end-column="115" />
         </state>
       </provider>
     </entry>
@@ -946,10 +892,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/newEvent.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="166" column="122" lean-forward="false" selection-start-line="166" selection-start-column="122" selection-end-line="166" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rmi/RMIClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
-          <caret line="15" column="49" lean-forward="false" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/SceneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -970,32 +945,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/SceneController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/newEvent.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/editMember.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="166" column="122" lean-forward="false" selection-start-line="166" selection-start-column="122" selection-end-line="166" selection-end-column="122" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="32" column="59" lean-forward="false" selection-start-line="32" selection-start-column="59" selection-end-line="32" selection-end-column="59" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="157">
+          <caret line="150" column="74" lean-forward="false" selection-start-line="150" selection-start-column="74" selection-end-line="150" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
