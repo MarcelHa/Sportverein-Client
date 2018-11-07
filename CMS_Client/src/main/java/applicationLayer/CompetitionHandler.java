@@ -34,6 +34,9 @@ public class CompetitionHandler {
         RMIClient.getInstance().setCompetitionRemotable().insertCompetition(competitionDTO);
     }
 
+    /*
+    Adds or deletes a team from the table view
+     */
     public void addTeam(CompetitionDTO competitionDTO) throws RemoteException, NotBoundException, MalformedURLException {
         RMIClient.getInstance().setCompetitionRemotable().addTeam(competitionDTO);
     }

@@ -13,10 +13,6 @@ public class CompetitionDTO implements Serializable {
     private Date _startDate;
     private List<TeamDTO> _teamList;
     private SportDTO _sport;
-<<<<<<< HEAD
-
-=======
->>>>>>> a2a78afbcd68097f41a5dfd50ce88d965cc9ca9a
 
     public String getCompName() {
         return _compName;
@@ -61,12 +57,10 @@ public class CompetitionDTO implements Serializable {
         return _sport;
     }
 
-<<<<<<< HEAD
     public void setSport(SportDTO _sport) {
         _sport = _sport;
     }
 
-=======
-    public void setSport(SportDTO sport) { _sport = _sport; }
->>>>>>> a2a78afbcd68097f41a5dfd50ce88d965cc9ca9a
+
+
 }
