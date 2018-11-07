@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86db7dde-e0c0-4893-900c-b35ae8602985" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMS_Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CMS_Client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerMemberList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerMemberList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/presentationLayer/viewController/ViewControllerEditMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presentationLayer/viewController/ViewControllerEditMember.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/presentationLayer/viewController/ViewControllerNewMember.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/presentationLayer/viewController/ViewControllerNewMember.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,55 +39,47 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="2" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="436" />
+          <entry key="dummy" value="3" />
+          <entry key="java" value="1272" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="436" />
+          <entry key="JAVA" value="1272" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="fxml" value="8" />
-          <entry key="java" value="35" />
+          <entry key="fxml" value="9" />
+          <entry key="java" value="46" />
           <entry key="policy" value="1" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="35" />
+          <entry key="JAVA" value="46" />
           <entry key="PLAIN_TEXT" value="1" />
-          <entry key="XML" value="8" />
+          <entry key="XML" value="10" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/FactoryRemotable.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerMemberList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
+            <state relative-caret-position="101">
+              <caret line="130" column="92" selection-start-line="130" selection-start-column="92" selection-end-line="130" selection-end-column="92" />
             </state>
           </provider>
         </entry>
@@ -88,8 +87,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/MemberHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
+            <state relative-caret-position="357">
+              <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -98,76 +97,105 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerMemberList.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/memberList.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="150">
+              <caret line="141" column="101" selection-start-line="141" selection-start-column="101" selection-end-line="141" selection-end-column="101" />
             </state>
           </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/MemberRemotable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/RoleDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#212#213#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/TeamDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/PersonDTO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="81" selection-start-line="81" selection-end-line="81" />
-              <folding>
-                <element signature="e#1862#1863#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/SceneController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+            <state relative-caret-position="-911">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#addRole#0;class#ViewControllerEditMember#0" />
                 <element signature="method#deleteRole#0;class#ViewControllerEditMember#0" />
-                <element signature="e#5554#5555#0" expanded="true" />
-                <element signature="e#5625#5626#0" expanded="true" />
+                <element signature="e#5695#5696#0" expanded="true" />
+                <element signature="e#5766#5767#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="535">
+              <caret line="170" column="21" lean-forward="true" selection-start-line="170" selection-start-column="21" selection-end-line="170" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#switchToMember#0;class#ViewControllerNewMember#0" />
+                <element signature="method#switchToClub#0;class#ViewControllerNewMember#0" />
+                <element signature="method#switchToEvent#0;class#ViewControllerNewMember#0" />
+                <element signature="method#switchToHome#0;class#ViewControllerNewMember#0" />
+                <element signature="method#switchToResult#0;class#ViewControllerNewMember#0" />
+                <element signature="method#switchToEditMember#0;class#ViewControllerNewMember#0" />
+                <element signature="method#switchToMemberList#0;class#ViewControllerNewMember#0" />
+                <element signature="e#4548#4549#0" expanded="true" />
+                <element signature="e#4619#4620#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utilities/Validation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utilities/EmptyListeners.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utilities/ValidationListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1003">
+              <caret line="64" column="34" lean-forward="true" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utilities/StyleValidation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
+              <folding>
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#386#387#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#557#558#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utilities/FieldValidation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -178,10 +206,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <replaceStrings>
+      <replace>_updatedPersonDTO</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -189,11 +222,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/ui/viewController/NavigationController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/club.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/editEvent.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/event.fxml" />
-        <option value="$PROJECT_DIR$/src/main/resources/home.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/newEvent.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/result.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/ui/viewController/viewControllerNewMember.java" />
@@ -221,7 +249,6 @@
         <option value="$PROJECT_DIR$/src/main/java/MainClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/applicationLayer/rmi/MemberRemotable.java" />
         <option value="$PROJECT_DIR$/src/main/java/applicationLayer/interfaces/EventRemotable.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/applicationLayer/interfaces/MemberRemotable.java" />
         <option value="$PROJECT_DIR$/src/main/java/applicationLayer/rmi/client.policy" />
         <option value="$PROJECT_DIR$/src/main/java/applicationLayer/rmi/RMIClient.java" />
@@ -230,7 +257,6 @@
         <option value="$PROJECT_DIR$/src/main/java/presentationLayer/SceneController.java" />
         <option value="$PROJECT_DIR$/src/main/java/applicationLayer/dto/PersonDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/interfaces/RoleRemotable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java" />
         <option value="$PROJECT_DIR$/src/main/java/applicationLayer/MemberHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/interfaces/MemberRemotable.java" />
         <option value="$PROJECT_DIR$/src/main/resources/memberList.fxml" />
@@ -239,7 +265,14 @@
         <option value="$PROJECT_DIR$/src/main/resources/editMember.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java" />
         <option value="$PROJECT_DIR$/src/main/java/rmi/RMIClient.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/utilities/StyleValidation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utilities/personEmptyListeners.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utilities/EmptyListeners.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utilities/Validation.java" />
         <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java" />
+        <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java" />
+        <option value="$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerMemberList.java" />
       </list>
     </option>
   </component>
@@ -267,10 +300,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-6" />
-    <option name="width" value="816" />
-    <option name="height" value="822" />
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="width" value="819" />
+    <option name="height" value="825" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -280,6 +313,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -375,25 +409,20 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541279352827" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541556788044" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WS2018_Server/CMS_Server" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="vcs.CVS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\java\rmi" />
-      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\java" />
-      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\resources\images" />
-      <recent name="C:\Users\Workplace\Desktop\Projekt_WS2018\CMS_Client\src\main\resources\images" />
-      <recent name="C:\Users\Workplace\Desktop\Projekt_WS2018\CMS_Client\src\main\resources" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="applicationLayer" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -405,11 +434,16 @@
       <recent name="C:\Users\Workplace\Desktop\Projekt_WS2018\CMS_Client\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utilities" />
       <recent name="rmi.interfaces" />
       <recent name="rmi.dto" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="applicationLayer" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\java\rmi" />
+      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\java" />
+      <recent name="C:\Users\Workplace\Documents\GitHub\WS2018_Client\CMS_Client\src\main\resources\images" />
+      <recent name="C:\Users\Workplace\Desktop\Projekt_WS2018\CMS_Client\src\main\resources\images" />
+      <recent name="C:\Users\Workplace\Desktop\Projekt_WS2018\CMS_Client\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -514,17 +548,18 @@
       <workItem from="1541268546035" duration="3815000" />
       <workItem from="1541387819506" duration="1108000" />
       <workItem from="1541435418209" duration="830000" />
+      <workItem from="1541547710568" duration="1408000" />
+      <workItem from="1541550782996" duration="5779000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108975000" />
+    <option name="totallyTimeSpent" value="116162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.35870445" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34251013" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -533,8 +568,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49485862" weight="0.10779436" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39800996" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49485862" visible="true" weight="0.11774461" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39800996" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -597,7 +632,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java</url>
-          <line>75</line>
+          <line>69</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
@@ -610,22 +645,8 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/NewMemberHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/interfaces/IMember.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/MemberController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/interfaces/Iperson.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/interfaces/RMIRemotable.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/Stuber.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/interfaces/Remotable.java" />
     <entry file="file://$PROJECT_DIR$/Projekt_WS2018.iml" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/sun/rmi/registry/RegistryImpl_Stub.class" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Math.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/Arrays.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/net/URI.java" />
@@ -656,10 +677,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/RoleRemotable.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/IPersonDTO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/memberList.fxml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/member.fxml">
       <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
@@ -704,10 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#904#1017#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -718,26 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="118" column="7" selection-start-line="118" selection-start-column="7" selection-end-line="118" selection-end-column="7" />
-          <folding>
-            <element signature="method#switchToMember#0;class#ViewControllerNewMember#0" />
-            <element signature="method#switchToClub#0;class#ViewControllerNewMember#0" />
-            <element signature="method#switchToEvent#0;class#ViewControllerNewMember#0" />
-            <element signature="method#switchToHome#0;class#ViewControllerNewMember#0" />
-            <element signature="method#switchToResult#0;class#ViewControllerNewMember#0" />
-            <element signature="method#switchToEditMember#0;class#ViewControllerNewMember#0" />
-            <element signature="method#switchToMemberList#0;class#ViewControllerNewMember#0" />
-            <element signature="method#initialize#0;class#ViewControllerNewMember#0" />
-            <element signature="method#addRole#0;class#ViewControllerNewMember#0" />
-            <element signature="method#deleteRole#0;class#ViewControllerNewMember#0" />
-            <element signature="method#addNewMember#0;class#ViewControllerNewMember#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utilities/UtilDate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -745,41 +738,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/NavigationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/SceneController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerMemberList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/MemberHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="37" column="69" selection-start-line="37" selection-start-column="69" selection-end-line="37" selection-end-column="69" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/TeamDTO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/FactoryRemotable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
         </state>
       </provider>
     </entry>
@@ -787,33 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/FactoryRemotable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/interfaces/CompetitionRemotable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/PersonDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-          <folding>
-            <element signature="e#1862#1863#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -827,16 +769,156 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/TeamDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/rmi/dto/PersonDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
+          <folding>
+            <element signature="e#1862#1863#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="21" selection-start-line="35" selection-start-column="21" selection-end-line="35" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java___jb_tmp___">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/SceneController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/NavigationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/ObjectMapperUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/FieldValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/ValidationListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="64" column="34" lean-forward="true" selection-start-line="64" selection-start-column="34" selection-end-line="64" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/StyleValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="6" column="96" selection-start-line="6" selection-start-column="96" selection-end-line="6" selection-end-column="96" />
+          <folding>
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#386#387#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#557#558#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/EmptyListeners.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utilities/Validation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerEditMember.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="75" column="21" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+        <state relative-caret-position="-911">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#addRole#0;class#ViewControllerEditMember#0" />
             <element signature="method#deleteRole#0;class#ViewControllerEditMember#0" />
-            <element signature="e#5554#5555#0" expanded="true" />
-            <element signature="e#5625#5626#0" expanded="true" />
+            <element signature="e#5695#5696#0" expanded="true" />
+            <element signature="e#5766#5767#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/memberList.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="141" column="101" selection-start-line="141" selection-start-column="101" selection-end-line="141" selection-end-column="101" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/applicationLayer/MemberHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerNewMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="170" column="21" lean-forward="true" selection-start-line="170" selection-start-column="21" selection-end-line="170" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#switchToMember#0;class#ViewControllerNewMember#0" />
+            <element signature="method#switchToClub#0;class#ViewControllerNewMember#0" />
+            <element signature="method#switchToEvent#0;class#ViewControllerNewMember#0" />
+            <element signature="method#switchToHome#0;class#ViewControllerNewMember#0" />
+            <element signature="method#switchToResult#0;class#ViewControllerNewMember#0" />
+            <element signature="method#switchToEditMember#0;class#ViewControllerNewMember#0" />
+            <element signature="method#switchToMemberList#0;class#ViewControllerNewMember#0" />
+            <element signature="e#4548#4549#0" expanded="true" />
+            <element signature="e#4619#4620#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/presentationLayer/viewController/ViewControllerMemberList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="130" column="92" selection-start-line="130" selection-start-column="92" selection-end-line="130" selection-end-column="92" />
         </state>
       </provider>
     </entry>

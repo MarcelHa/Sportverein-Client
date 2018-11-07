@@ -8,17 +8,23 @@ import javafx.collections.transformation.SortedList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.scene.image.Image;
+import javafx.stage.Stage;
 import presentationLayer.CareTaker;
 import presentationLayer.SceneController;
 import rmi.dto.PersonDTO;
+import utilities.StyleValidation;
+import utilities.ValidationListener;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 
@@ -115,24 +121,58 @@ public class ViewControllerMemberList extends  SceneController  implements Initi
 
         _membersTableView.setItems(sortedData);
 
+
+
     }
 
     @FXML
     public void deleteMember(ActionEvent actionEvent) throws IOException, NotBoundException {
-        super.switchScene(actionEvent, "member.fxml");
-        _memberHandler.deleteMember(_membersTableView.getSelectionModel().getSelectedItem());
-
+        PersonDTO selectedPerson = _membersTableView.getSelectionModel().getSelectedItem();
+        String person = selectedPerson.getFirstName() + " " + selectedPerson.getLastName();
+        Optional<ButtonType> result = showWarningDialog("Deleting Member " + person
+                , "Are you sure you want to delete " + person + "?");
+        boolean wantOverbook = false;
+        if (result.get() == ButtonType.OK) {
+            if (_membersTableView.getSelectionModel().getSelectedItem() == null) {
+                StyleValidation.markRed(_membersTableView);
+            }
+            else {
+                super.switchScene(actionEvent, "member.fxml");
+                _memberHandler.deleteMember(_membersTableView.getSelectionModel().getSelectedItem());
+            }
+        }
     }
+
+
+    private Optional<ButtonType> showWarningDialog(String title, String content){
+        Alert alert = new Alert(Alert.AlertType.WARNING, content, ButtonType.OK, ButtonType.CANCEL);
+        alert.setTitle(title);
+        alert.setHeaderText(null);
+
+        Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+//        stage.getIcons().add(new Image("/umbrella.png"));
+
+        return alert.showAndWait();
+    }
+
+
 
     @FXML
     public void innerSave(ActionEvent actionEvent) throws IOException, NotBoundException{
-        CareTaker.add(editMember());
-        super.switchScene(actionEvent, "editMember.fxml");
+        if (_membersTableView.getSelectionModel().getSelectedItem() == null) {
+            StyleValidation.markRed(_membersTableView);
+        }
+        else {
+            CareTaker.add(editMember());
+            super.switchScene(actionEvent, "editMember.fxml");
+        }
     }
 
     @FXML
     private PersonDTO editMember() throws RemoteException, NotBoundException, MalformedURLException {
         return _membersTableView.getSelectionModel().getSelectedItem();
     }
+
+
 
 }
