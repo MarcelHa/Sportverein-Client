@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="presentationLayer.viewController.ViewControllerNewMember">
+   <children>
+      <Pane prefHeight="170.0" prefWidth="1000.0" style="-fx-background-color: #44bba4;">
+         <children>
+            <JFXTextField focusColor="WHITE" layoutX="738.0" layoutY="48.0" prefHeight="25.0" prefWidth="220.0" promptText="Search" unFocusColor="WHITE" />
+            <ImageView fitHeight="44.0" fitWidth="41.0" layoutX="27.0" layoutY="50.0" onMouseClicked="#switchToHome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/home.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="84.0" layoutY="51.0" text="Club Management System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="84.0" layoutY="96.0" text="MEMBERS" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="210.0" onAction="#switchToMember" prefHeight="40.0" prefWidth="130.0" text="MEMBERS" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="320.0" onAction="#switchToClub" prefHeight="40.0" prefWidth="130.0" text="CLUB" textAlignment="JUSTIFY" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="360.0" onAction="#switchToEvent" prefHeight="40.0" prefWidth="130.0" text="EVENTS" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="400.0" onAction="#switchToResult" prefHeight="40.0" prefWidth="130.0" text="RESULTS" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="440.0" prefHeight="40.0" prefWidth="130.0" text="SETTINGS" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="4.0" layoutY="215.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="4.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/club.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="4.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/competitions.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="4.0" layoutY="402.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/results.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="4.0" layoutY="446.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/settings.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="145.0" layoutY="170.0" orientation="VERTICAL" prefHeight="430.0" prefWidth="40.0" />
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="285.0" onAction="#switchToMemberList" prefHeight="35.0" prefWidth="130.0" text="MEMBERLIST" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" layoutX="34.0" layoutY="250.0" prefHeight="35.0" prefWidth="130.0" text="NEW MEMBER" textFill="#44bba4" underline="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="BASELINE_LEFT" layoutX="35.0" layoutY="170.0" onAction="#switchToHome" prefHeight="40.0" prefWidth="130.0" text="HOME" textFill="#44bba4">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="5.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/home1.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="185.0" layoutY="182.0" text="NEW MEMBER">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="220.0" text="First name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="260.0" text="Last name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="300.0" text="Birthday">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="340.0" text="SSN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstName" layoutX="290.0" layoutY="215.0" />
+      <TextField fx:id="lastName" layoutX="290.0" layoutY="255.0" />
+      <DatePicker fx:id="birthday" layoutX="290.0" layoutY="295.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="ssn" layoutX="290.0" layoutY="335.0" />
+      <Button fx:id="addMember" defaultButton="true" layoutX="825.0" layoutY="515.0" mnemonicParsing="false" onAction="#addNewMember" prefHeight="39.0" prefWidth="150.0" text="ADD MEMBER">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="185.0" layoutY="390.0" text="Attach Roles">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <TableView fx:id="_attachedRoles" layoutX="185.0" layoutY="432.0" prefHeight="120.0" prefWidth="225.0">
+          <placeholder>
+              <Label text="Choose prefered role(s)"/>
+          </placeholder>
+        <columns>
+          <TableColumn prefWidth="223.0" text="Attached Roles">
+             <cellValueFactory>
+                <PropertyValueFactory property="roleName" />
+             </cellValueFactory>
+          </TableColumn>
+        </columns>
+      </TableView>
+      <TableView fx:id="_availableRoles" layoutX="490.0" layoutY="432.0" prefHeight="120.0" prefWidth="225.0">
+          <placeholder>
+              <Label text="No additional roles available"/>
+          </placeholder>
+         <columns>
+            <TableColumn prefWidth="223.0" text="Available Roles">
+               <cellValueFactory>
+                  <PropertyValueFactory property="roleName" />
+               </cellValueFactory>
+            </TableColumn>
+         </columns>
+      </TableView>
+      <Button fx:id="_addRoleButton" layoutX="425.0" layoutY="445.0" mnemonicParsing="false" onAction="#addRole" prefHeight="30.0" prefWidth="50.0" text="&lt;&lt;&lt;" />
+      <Button fx:id="_deleteRoleButton" layoutX="425.0" layoutY="504.0" mnemonicParsing="false" onAction="#deleteRole" prefHeight="30.0" prefWidth="50.0" text="&gt;&gt;&gt;" />
+   </children>
+   <effect>
+      <DropShadow />
+   </effect>
+</AnchorPane>
