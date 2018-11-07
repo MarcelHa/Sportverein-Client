@@ -21,4 +21,25 @@ public class RoleDTO implements Serializable {
     public void setRoleName(String roleName) {
         _roleName = roleName;
     }
+<<<<<<< HEAD
+=======
+
+    private int _roleId;
+    private String _roleName;
+
+    //Overriding equals
+    @Override
+    public boolean equals(Object obj)
+    {
+        if (this == obj) return true;
+        if (obj == null) return false;
+        if (this.getClass() != obj.getClass()) return false;
+        RoleDTO that = (RoleDTO) obj;
+        if (this._roleId != that._roleId) return false;
+        if (!this._roleName.equals(that._roleName)) return false;
+        return true;
+    }
+
+
+>>>>>>> origin/Marcel_addstuff
 }

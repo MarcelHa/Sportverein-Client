@@ -6,23 +6,27 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+<<<<<<< HEAD
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+=======
+import javafx.scene.control.*;
+>>>>>>> origin/Marcel_addstuff
 import presentationLayer.CareTaker;
 import presentationLayer.SceneController;
 import rmi.dto.PersonDTO;
 import rmi.dto.RoleDTO;
 import utilities.UtilDate;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.sql.Date;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ResourceBundle;
+import java.util.*;
+
 
 public class ViewControllerEditMember extends SceneController implements Initializable {
 
@@ -34,7 +38,7 @@ public class ViewControllerEditMember extends SceneController implements Initial
     private TableView<RoleDTO> _availableRoles;
     @FXML
     private TableView<RoleDTO> _attachedRoles;
-
+    private PersonDTO _updatedPersonDTO = new PersonDTO();
     private List<RoleDTO> _availableRolesList;
     private ObservableList<RoleDTO> _availableRolesObservableList;
     private ObservableList<RoleDTO> _attachedRolesObservableList;
@@ -47,17 +51,37 @@ public class ViewControllerEditMember extends SceneController implements Initial
 
         try {
             _availableRolesList = _memberHandler.getAllRoles();
+<<<<<<< HEAD
+=======
+        } catch (RemoteException | NotBoundException e) {
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        }
+>>>>>>> origin/Marcel_addstuff
 
             PersonDTO mementoDTO = CareTaker.getMemento();
             initTextField(mementoDTO);
 
             mementoDTO.setRoleDTOList(_memberHandler.getRolesFromPersonDto(mementoDTO));
 
+<<<<<<< HEAD
             _attachedRolesList = mementoDTO.getRoleDTOList();
 
             if (_attachedRolesList == null) {
                 _attachedRolesList = new LinkedList<>();
             }
+=======
+        _attachedRolesList = mementoDTO.getRoleDTOList();
+>>>>>>> origin/Marcel_addstuff
+
+        for (RoleDTO role:_attachedRolesList) {
+            _availableRolesList.remove(role);
+        }
+
+        _availableRoles.refresh();
+        _attachedRoles.refresh();
+
 
         for (RoleDTO roleDTO:_availableRolesList) {
             if (mementoDTO.getRoleDTOList() != null && mementoDTO.getRoleDTOList().contains(roleDTO)) {
@@ -73,6 +97,17 @@ public class ViewControllerEditMember extends SceneController implements Initial
         } catch (RemoteException | MalformedURLException | NotBoundException e) {
             e.printStackTrace();
         }
+<<<<<<< HEAD
+=======
+
+        _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
+        _attachedRolesObservableList = FXCollections.observableList(_attachedRolesList);
+        _availableRoles.setItems(_availableRolesObservableList);
+        _attachedRoles.setItems(_attachedRolesObservableList);
+
+        utilities.EmptyListeners.Person(firstName, lastName, birthday, ssn);
+
+>>>>>>> origin/Marcel_addstuff
     }
 
 
@@ -130,6 +165,7 @@ public class ViewControllerEditMember extends SceneController implements Initial
     }
     @FXML
     public void updateMember(ActionEvent actionEvent) throws IOException, NotBoundException {
+<<<<<<< HEAD
         super.switchScene(actionEvent, "member.fxml");
         PersonDTO person = new PersonDTO();
         person.setFirstName(firstName.getText());
@@ -139,6 +175,18 @@ public class ViewControllerEditMember extends SceneController implements Initial
         person.setRoleDTOList(_attachedRolesList);
 
         _memberHandler.updateMember(person);
+=======
+        if (utilities.Validation.person(firstName,lastName,birthday,ssn)) {
+
+            super.switchScene(actionEvent, "member.fxml");
+            _updatedPersonDTO.setFirstName(firstName.getText());
+            _updatedPersonDTO.setLastName(lastName.getText());
+            _updatedPersonDTO.setDateOfBirth(toDate(birthday));
+            _updatedPersonDTO.setSocialSecurityNumber(ssn.getText());
+            _updatedPersonDTO.setRoleDTOList(_attachedRolesList);
+            _memberHandler.updateMember(_updatedPersonDTO);
+        }
+>>>>>>> origin/Marcel_addstuff
     }
 
     //Date Converter
@@ -150,9 +198,20 @@ public class ViewControllerEditMember extends SceneController implements Initial
     Refills the empty text areas with memento
      */
     private void initTextField(PersonDTO mementoDTO){
+        _updatedPersonDTO.setPersonID(mementoDTO.getPersonID());
         firstName.setText(mementoDTO.getFirstName());
         lastName.setText(mementoDTO.getLastName());
         birthday.setValue(UtilDate.convertToLocalDate(mementoDTO.getDateOfBirth()));
         ssn.setText(mementoDTO.getSocialSecurityNumber());
     }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/Marcel_addstuff
 }
+
+
+
+
+
