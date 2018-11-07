@@ -1,6 +1,8 @@
 package rmi.interfaces;
 
 import rmi.dto.CompetitionDTO;
+import rmi.dto.LeagueDTO;
+import rmi.dto.SportDTO;
 import rmi.dto.TeamDTO;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
@@ -26,5 +28,7 @@ public interface CompetitionRemotable extends Remote {
 
     List<TeamDTO> getAllTeams()  throws RemoteException;;
 
+    List<SportDTO> getAllSports() throws RemoteException;
 
+    List<LeagueDTO> getAllLeagues() throws RemoteException;
 }

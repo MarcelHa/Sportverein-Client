@@ -12,7 +12,7 @@ public class CompetitionDTO implements Serializable {
     private String _location;
     private Date _startDate;
     private List<TeamDTO> _teamList;
-
+    private SportDTO _sport;
 
     public String getCompName() {
         return _compName;
@@ -52,4 +52,10 @@ public class CompetitionDTO implements Serializable {
     public void setCompId(int compId) {
         _compId = compId;
     }
+
+    public SportDTO getSport() {
+        return _sport;
+    }
+
+    public void setSport(SportDTO sport) { _sport = _sport; }
 }
