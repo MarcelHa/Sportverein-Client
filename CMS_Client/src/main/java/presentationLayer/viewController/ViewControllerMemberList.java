@@ -43,22 +43,27 @@ public class ViewControllerMemberList extends SceneController implements Initial
     public void switchToMember(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "member.fxml");
     }
+
     @FXML
     public void switchToClub(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "club.fxml");
     }
+
     @FXML
     public void switchToEvent(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "event.fxml");
     }
+
     @FXML
     public void switchToHome(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "home.fxml");
     }
+
     @FXML
     public void switchToResult(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "result.fxml");
     }
+
     @FXML
     public void switchToNewMember(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "newMember.fxml");
@@ -149,6 +154,7 @@ public class ViewControllerMemberList extends SceneController implements Initial
 
         _membersTableView.setItems(sortedData);
     }
+
     @FXML
     public void deleteMember(ActionEvent actionEvent) throws IOException, NotBoundException {
         if (_membersTableView.getSelectionModel().getSelectedItem() == null) {
@@ -169,11 +175,15 @@ public class ViewControllerMemberList extends SceneController implements Initial
             }
         }
     }
+
     @FXML
     public void innerSave(ActionEvent actionEvent) throws IOException, NotBoundException {
-        CareTaker.add(editMember());
-        super.switchScene(actionEvent, "editMember.fxml");
-
+        if (_membersTableView.getSelectionModel().getSelectedItem() == null) {
+            StyleValidation.markRed(_membersTableView);
+        } else {
+            CareTaker.add(editMember());
+            super.switchScene(actionEvent, "editMember.fxml");
+        }
     }
 
 
@@ -183,6 +193,7 @@ public class ViewControllerMemberList extends SceneController implements Initial
     private PersonDTO editMember() throws RemoteException, NotBoundException, MalformedURLException {
         return _membersTableView.getSelectionModel().getSelectedItem();
     }
+
     private Optional<ButtonType> showWarningDialog(String title, String content) {
         Alert alert = new Alert(Alert.AlertType.WARNING, content, ButtonType.OK, ButtonType.CANCEL);
         alert.setTitle(title);

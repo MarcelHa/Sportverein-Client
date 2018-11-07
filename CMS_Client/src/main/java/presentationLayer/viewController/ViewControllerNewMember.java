@@ -58,6 +58,8 @@ public class ViewControllerNewMember extends SceneController implements Initiali
         _availableRoles.setItems(_availableRolesObservableList);
 
         _attachedRoles.setItems(_attachedRolesObservableList);
+
+        utilities.EmptyListeners.Person(firstName, lastName,birthday, ssn);
     }
 
     /*
@@ -112,18 +114,9 @@ public class ViewControllerNewMember extends SceneController implements Initiali
     }
     @FXML
     public void addNewMember(ActionEvent actionEvent) throws IOException, NotBoundException {
-        super.switchScene(actionEvent, "Member.fxml");
-        PersonDTO person = new PersonDTO();
-        person.setFirstName(firstName.getText());
-        person.setLastName(lastName.getText());
-        person.setDateOfBirth(toDate(birthday));
-        person.setSocialSecurityNumber(ssn.getText());
-        person.setRoleDTOList(_attachedRolesList);
-
-        _memberHandler.addNewMember(person);
-
         if (utilities.Validation.person(firstName, lastName, birthday, ssn)) {
             super.switchScene(actionEvent, "Member.fxml");
+            PersonDTO person = new PersonDTO();
             person.setFirstName(firstName.getText());
             person.setLastName(lastName.getText());
             person.setDateOfBirth(toDate(birthday));

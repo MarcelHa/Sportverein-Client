@@ -139,15 +139,6 @@ public class ViewControllerEditMember extends SceneController implements Initial
     }
     @FXML
     public void updateMember(ActionEvent actionEvent) throws IOException, NotBoundException {
-        super.switchScene(actionEvent, "member.fxml");
-        PersonDTO person = new PersonDTO();
-        person.setFirstName(firstName.getText());
-        person.setLastName(lastName.getText());
-        person.setDateOfBirth(toDate(birthday));
-        person.setSocialSecurityNumber(ssn.getText());
-        person.setRoleDTOList(_attachedRolesList);
-
-        _memberHandler.updateMember(person);
 
         if (utilities.Validation.person(firstName, lastName, birthday, ssn)) {
             super.switchScene(actionEvent, "member.fxml");
