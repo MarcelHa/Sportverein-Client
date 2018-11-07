@@ -9,27 +9,20 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import presentationLayer.CareTaker;
 import presentationLayer.SceneController;
 import rmi.dto.PersonDTO;
-<<<<<<< HEAD
-=======
 import utilities.StyleValidation;
-import utilities.ValidationListener;
->>>>>>> origin/Marcel_addstuff
 
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.ResourceBundle;
-
 
 public class ViewControllerMemberList extends SceneController implements Initializable {
 
@@ -50,27 +43,22 @@ public class ViewControllerMemberList extends SceneController implements Initial
     public void switchToMember(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "member.fxml");
     }
-
     @FXML
     public void switchToClub(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "club.fxml");
     }
-
     @FXML
     public void switchToEvent(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "event.fxml");
     }
-
     @FXML
     public void switchToHome(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "home.fxml");
     }
-
     @FXML
     public void switchToResult(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "result.fxml");
     }
-
     @FXML
     public void switchToNewMember(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "newMember.fxml");
@@ -124,13 +112,10 @@ public class ViewControllerMemberList extends SceneController implements Initial
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
-<<<<<<< HEAD
-=======
 
         _personDTOObservableListList = FXCollections.observableList(_personDTOList);
 
         _membersTableView.setItems(_personDTOObservableListList);
-
 
 
         FilteredList<PersonDTO> filteredData = new FilteredList<>(_personDTOObservableListList, p -> true);
@@ -163,18 +148,12 @@ public class ViewControllerMemberList extends SceneController implements Initial
         sortedData.comparatorProperty().bind(_membersTableView.comparatorProperty());
 
         _membersTableView.setItems(sortedData);
-
-
-
->>>>>>> origin/Marcel_addstuff
     }
-
     @FXML
     public void deleteMember(ActionEvent actionEvent) throws IOException, NotBoundException {
         if (_membersTableView.getSelectionModel().getSelectedItem() == null) {
             StyleValidation.markRed(_membersTableView);
-        }
-        else {
+        } else {
             PersonDTO selectedPerson = _membersTableView.getSelectionModel().getSelectedItem();
             String person = selectedPerson.getFirstName() + " " + selectedPerson.getLastName();
             Optional<ButtonType> result = showWarningDialog("Deleting Member " + person
@@ -183,17 +162,28 @@ public class ViewControllerMemberList extends SceneController implements Initial
             if (result.get() == ButtonType.OK) {
                 if (_membersTableView.getSelectionModel().getSelectedItem() == null) {
                     StyleValidation.markRed(_membersTableView);
-                }
-                else {
+                } else {
                     super.switchScene(actionEvent, "member.fxml");
                     _memberHandler.deleteMember(_membersTableView.getSelectionModel().getSelectedItem());
                 }
             }
         }
     }
+    @FXML
+    public void innerSave(ActionEvent actionEvent) throws IOException, NotBoundException {
+        CareTaker.add(editMember());
+        super.switchScene(actionEvent, "editMember.fxml");
+
+    }
 
 
-    private Optional<ButtonType> showWarningDialog(String title, String content){
+    /*
+    Helper Methods
+     */
+    private PersonDTO editMember() throws RemoteException, NotBoundException, MalformedURLException {
+        return _membersTableView.getSelectionModel().getSelectedItem();
+    }
+    private Optional<ButtonType> showWarningDialog(String title, String content) {
         Alert alert = new Alert(Alert.AlertType.WARNING, content, ButtonType.OK, ButtonType.CANCEL);
         alert.setTitle(title);
         alert.setHeaderText(null);
@@ -203,30 +193,4 @@ public class ViewControllerMemberList extends SceneController implements Initial
 
         return alert.showAndWait();
     }
-
-
-
-    @FXML
-<<<<<<< HEAD
-    public void innerSave(ActionEvent actionEvent) throws IOException, NotBoundException {
-        CareTaker.add(editMember());
-        super.switchScene(actionEvent, "editMember.fxml");
-=======
-    public void innerSave(ActionEvent actionEvent) throws IOException, NotBoundException{
-        if (_membersTableView.getSelectionModel().getSelectedItem() == null) {
-            StyleValidation.markRed(_membersTableView);
-        }
-        else {
-            CareTaker.add(editMember());
-            super.switchScene(actionEvent, "editMember.fxml");
-        }
->>>>>>> origin/Marcel_addstuff
-    }
-
-    private PersonDTO editMember() throws RemoteException, NotBoundException, MalformedURLException {
-        return _membersTableView.getSelectionModel().getSelectedItem();
-    }
-
-
-
 }

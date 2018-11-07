@@ -13,8 +13,7 @@ import java.rmi.RemoteException;
 
 public class RMIClient {
 
-    //private static String serverIP = "172.22.8.115";
-    private static String serverIP = "172.22.8.115";
+    private static String serverIP = "localhost";
     private static RMIClient rmiClient;
 
 

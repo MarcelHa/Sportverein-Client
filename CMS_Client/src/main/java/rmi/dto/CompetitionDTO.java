@@ -8,6 +8,11 @@ public class CompetitionDTO implements Serializable {
 
     private static final long serialVersionUID = 65412L;
     private int _compId;
+    private String _compName;
+    private String _location;
+    private Date _startDate;
+    private List<TeamDTO> _teamList;
+
 
     public String getCompName() {
         return _compName;
@@ -17,11 +22,6 @@ public class CompetitionDTO implements Serializable {
         _compName = compName;
     }
 
-    private String _compName;
-    private String _location;
-    private Date _startDate;
-    private List<TeamDTO> _teamList;
-
     public List<TeamDTO> getTeamList() {
         return _teamList;
     }
@@ -30,9 +30,7 @@ public class CompetitionDTO implements Serializable {
         _teamList = teamList;
     }
 
-    public CompetitionDTO() {
-
-    }
+    public CompetitionDTO() { }
 
     public CompetitionDTO(String location, Date startDate) {
         _location = location;

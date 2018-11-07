@@ -12,10 +12,7 @@ import javafx.fxml.FXML;
 import presentationLayer.SceneController;
 import rmi.dto.RoleDTO;
 import utilities.UtilDate;
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/Marcel_addstuff
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -70,69 +67,30 @@ public class ViewControllerNewMember extends SceneController implements Initiali
     public void switchToMember(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "member.fxml");
     }
-
     @FXML
     public void switchToClub(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "club.fxml");
     }
-
     @FXML
     public void switchToEvent(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "event.fxml");
     }
-
     @FXML
     public void switchToHome(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "home.fxml");
     }
-
     @FXML
     public void switchToResult(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "result.fxml");
     }
-
     @FXML
     public void switchToEditMember(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "editMember.fxml");
     }
-
     @FXML
     public void switchToMemberList(ActionEvent actionEvent) throws IOException {
         super.switchScene(actionEvent, "memberList.fxml");
     }
-
-<<<<<<< HEAD
-=======
-
-    @Override
-    public void initialize(URL location, ResourceBundle resources) {
-        try {
-            _availableRolesList = _memberHandler.getAllRoles();
-        } catch (RemoteException e) {
-            e.printStackTrace();
-        } catch (NotBoundException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        }
-        _availableRolesObservableList = FXCollections.observableList(_availableRolesList);
-
-        _attachedRolesObservableList = FXCollections.observableList(_attachedRolesList);
-
-        _availableRoles.setItems(_availableRolesObservableList);
-
-        _attachedRoles.setItems(_attachedRolesObservableList);
-
-        Callback<DatePicker, DateCell> dayCellFactoryBirthday= this.getDayCellFactoryBirthday();
-
-        birthday.setDayCellFactory(dayCellFactoryBirthday);
-
-        utilities.EmptyListeners.Person(firstName, lastName, birthday, ssn);
-
-
-    }
-
->>>>>>> origin/Marcel_addstuff
     /*
     Presentation Layer Logic
      */
@@ -144,7 +102,6 @@ public class ViewControllerNewMember extends SceneController implements Initiali
         _attachedRoles.refresh();
         _availableRoles.refresh();
     }
-
     @FXML
     public void deleteRole() {
         if (_attachedRolesList.remove(_attachedRoles.getSelectionModel().getSelectedItem())) {
@@ -153,11 +110,8 @@ public class ViewControllerNewMember extends SceneController implements Initiali
         _attachedRoles.refresh();
         _availableRoles.refresh();
     }
-
-
     @FXML
     public void addNewMember(ActionEvent actionEvent) throws IOException, NotBoundException {
-<<<<<<< HEAD
         super.switchScene(actionEvent, "Member.fxml");
         PersonDTO person = new PersonDTO();
         person.setFirstName(firstName.getText());
@@ -168,12 +122,8 @@ public class ViewControllerNewMember extends SceneController implements Initiali
 
         _memberHandler.addNewMember(person);
 
-
-
-=======
-        if (utilities.Validation.person(firstName,lastName,birthday,ssn)) {
+        if (utilities.Validation.person(firstName, lastName, birthday, ssn)) {
             super.switchScene(actionEvent, "Member.fxml");
-            PersonDTO person = new PersonDTO();
             person.setFirstName(firstName.getText());
             person.setLastName(lastName.getText());
             person.setDateOfBirth(toDate(birthday));
@@ -181,15 +131,15 @@ public class ViewControllerNewMember extends SceneController implements Initiali
             person.setRoleDTOList(_attachedRolesList);
             _memberHandler.addNewMember(person);
         }
->>>>>>> origin/Marcel_addstuff
     }
 
     //Date Converter
     private Date toDate(DatePicker datePicker) {
         return UtilDate.convertToSQLDate(datePicker.getValue());
     }
-
-
+    /*
+    No birthday in the future can be chosen!
+     */
     private Callback<DatePicker, DateCell> getDayCellFactoryBirthday() {
 
         final Callback<DatePicker, DateCell> dayCellFactory = new Callback<DatePicker, DateCell>() {
@@ -210,7 +160,6 @@ public class ViewControllerNewMember extends SceneController implements Initiali
         };
         return dayCellFactory;
     }
-
 
 
 }
